@@ -1,0 +1,215 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  PUBLIC_USER
+  PRACTITIONER
+  REVIEWER
+  SENIOR_REVIEWER
+  ADMINISTRATOR
+}
+
+enum AccountStatus {
+  PENDING
+  ACTIVE
+  SUSPENDED
+  CLOSED
+}
+
+enum VerificationStatus {
+  NOT_SUBMITTED
+  PENDING
+  VERIFIED
+  CHANGES_REQUESTED
+  REJECTED
+  EXPIRED
+}
+
+enum ContributionStatus {
+  DRAFT
+  SUBMITTED
+  AUTOMATED_CHECKS
+  UNDER_REVIEW
+  CHANGES_REQUESTED
+  APPROVED
+  REJECTED
+  PUBLISHED
+  SUPERSEDED
+  DEPRECATED
+}
+
+enum ContributionKind {
+  NEW_ENTITY
+  NEW_CLAIM
+  UPDATE
+  TRANSLATION
+  SAFETY_FLAG
+  DEPRECATION_REQUEST
+}
+
+enum ReviewOutcome {
+  APPROVE
+  REQUEST_CHANGES
+  REJECT
+  DEPRECATE
+}
+
+enum AssignmentStatus {
+  ASSIGNED
+  ACCEPTED
+  DECLINED
+  COMPLETED
+  CANCELLED
+}
+
+enum RiskTier {
+  LOW
+  MODERATE
+  HIGH
+  URGENT
+}
+
+model User {
+  id                 String              @id @default(cuid())
+  email              String              @unique
+  displayName        String
+  preferredLanguage String              @default("en")
+  status             AccountStatus       @default(PENDING)
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
+  roles              UserRole[]
+  practitioner       PractitionerProfile?
+  submittedItems     Contribution[]      @relation("SubmittedBy")
+  reviewAssignments  ReviewAssignment[]  @relation("AssignedReviewer")
+  reviewDecisions    ReviewDecision[]    @relation("DecisionReviewer")
+  auditEvents        AuditEvent[]         @relation("AuditActor")
+
+  @@index([status])
+}
+
+model UserRole {
+  userId    String
+  role      Role
+  grantedAt DateTime @default(now())
+  grantedBy String?
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, role])
+  @@index([role])
+}
+
+model PractitionerProfile {
+  id                   String             @id @default(cuid())
+  userId               String             @unique
+  systemIri            String
+  registrationNumber   String?
+  registrationAuthority String?
+  jurisdictionCode     String?
+  verificationStatus   VerificationStatus @default(NOT_SUBMITTED)
+  verifiedAt           DateTime?
+  verificationExpiresAt DateTime?
+  publicProfileEnabled Boolean            @default(false)
+  conflictDisclosure   String?
+  user                 User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  credentials          Credential[]
+
+  @@index([verificationStatus])
+  @@index([systemIri])
+}
+
+model Credential {
+  id              String              @id @default(cuid())
+  practitionerId  String
+  credentialType  String
+  issuer           String
+  identifier      String?
+  issuedOn        DateTime?
+  expiresOn       DateTime?
+  privateFileKey  String?
+  reviewNote      String?
+  createdAt       DateTime            @default(now())
+  practitioner    PractitionerProfile @relation(fields: [practitionerId], references: [id], onDelete: Cascade)
+
+  @@index([practitionerId])
+}
+
+model Contribution {
+  id                 String             @id @default(cuid())
+  kind               ContributionKind
+  status             ContributionStatus @default(DRAFT)
+  riskTier           RiskTier            @default(MODERATE)
+  submissionGraphIri String               @unique
+  proposedEntityIri  String
+  baseEntityIri      String?
+  title              String
+  summary            String?
+  submittedById      String
+  submittedAt        DateTime?
+  publishedAt        DateTime?
+  currentRevision    Int                  @default(1)
+  createdAt          DateTime             @default(now())
+  updatedAt          DateTime             @updatedAt
+  submittedBy        User                 @relation("SubmittedBy", fields: [submittedById], references: [id])
+  assignments        ReviewAssignment[]
+  decisions          ReviewDecision[]
+
+  @@index([status, riskTier])
+  @@index([submittedById, status])
+  @@index([proposedEntityIri])
+}
+
+model ReviewAssignment {
+  id             String           @id @default(cuid())
+  contributionId String
+  reviewerId     String
+  status         AssignmentStatus @default(ASSIGNED)
+  dueAt          DateTime?
+  assignedAt     DateTime         @default(now())
+  completedAt    DateTime?
+  conflictNote   String?
+  contribution   Contribution     @relation(fields: [contributionId], references: [id], onDelete: Cascade)
+  reviewer       User             @relation("AssignedReviewer", fields: [reviewerId], references: [id])
+
+  @@unique([contributionId, reviewerId])
+  @@index([reviewerId, status, dueAt])
+}
+
+model ReviewDecision {
+  id             String        @id @default(cuid())
+  contributionId String
+  reviewerId     String
+  outcome        ReviewOutcome
+  rationale      String
+  reviewedRevision Int
+  safetyChecked  Boolean       @default(false)
+  evidenceChecked Boolean      @default(false)
+  decidedAt      DateTime      @default(now())
+  contribution   Contribution  @relation(fields: [contributionId], references: [id], onDelete: Cascade)
+  reviewer       User          @relation("DecisionReviewer", fields: [reviewerId], references: [id])
+
+  @@index([contributionId, decidedAt])
+  @@index([reviewerId, decidedAt])
+}
+
+model AuditEvent {
+  id           String   @id @default(cuid())
+  actorId      String?
+  action       String
+  entityType   String
+  entityId     String
+  occurredAt   DateTime @default(now())
+  requestId    String?
+  metadata     Json?
+  previousHash String?
+  eventHash    String?  @unique
+  actor        User?    @relation("AuditActor", fields: [actorId], references: [id], onDelete: SetNull)
+
+  @@index([entityType, entityId, occurredAt])
+  @@index([actorId, occurredAt])
+}

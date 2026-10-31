@@ -1,0 +1,101 @@
+@prefix tint: <https://w3id.org/tint/ontology/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/tint/ontology> a owl:Ontology ;
+    dcterms:title "TINT Traditional Medicine Ontology"@en ;
+    dcterms:description "A claim-centred ontology for reviewed traditional-medicine knowledge."@en ;
+    owl:versionInfo "0.1.0-phase1" .
+
+tint:MedicalSystem a owl:Class ; rdfs:subClassOf skos:Concept .
+tint:HealthCondition a owl:Class ; rdfs:subClassOf skos:Concept .
+tint:Symptom a owl:Class ; rdfs:subClassOf skos:Concept .
+tint:BodySystem a owl:Class ; rdfs:subClassOf skos:Concept .
+tint:PopulationGroup a owl:Class ; rdfs:subClassOf skos:Concept .
+tint:IntendedOutcome a owl:Class ; rdfs:subClassOf skos:Concept .
+tint:AdministrationRoute a owl:Class ; rdfs:subClassOf skos:Concept .
+tint:PlantPart a owl:Class ; rdfs:subClassOf skos:Concept .
+tint:Jurisdiction a owl:Class ; rdfs:subClassOf skos:Concept .
+
+tint:Remedy a owl:Class .
+tint:Formulation a owl:Class ; rdfs:subClassOf tint:Remedy .
+tint:Practice a owl:Class ; rdfs:subClassOf tint:Remedy .
+tint:Ingredient a owl:Class .
+tint:BiologicalSource a owl:Class .
+tint:PreparationMethod a owl:Class .
+tint:HealthUseClaim a owl:Class ;
+    rdfs:comment "A contextual, reviewable assertion about traditional use or an assessed health outcome."@en .
+
+tint:SafetyStatement a owl:Class .
+tint:Contraindication a owl:Class ; rdfs:subClassOf tint:SafetyStatement .
+tint:Interaction a owl:Class ; rdfs:subClassOf tint:SafetyStatement .
+tint:AdverseEffect a owl:Class ; rdfs:subClassOf tint:SafetyStatement .
+tint:SupervisionRequirement a owl:Class ; rdfs:subClassOf tint:SafetyStatement .
+
+tint:EvidenceItem a owl:Class ; rdfs:subClassOf prov:Entity .
+tint:ClassicalText a owl:Class ; rdfs:subClassOf tint:EvidenceItem .
+tint:GovernmentSource a owl:Class ; rdfs:subClassOf tint:EvidenceItem .
+tint:ResearchPublication a owl:Class ; rdfs:subClassOf tint:EvidenceItem .
+tint:CommunityKnowledge a owl:Class ; rdfs:subClassOf tint:EvidenceItem .
+
+tint:Practitioner a owl:Class ; rdfs:subClassOf prov:Agent .
+tint:Reviewer a owl:Class ; rdfs:subClassOf prov:Agent .
+tint:Credential a owl:Class .
+tint:Contribution a owl:Class ; rdfs:subClassOf prov:Activity .
+tint:ReviewDecision a owl:Class ; rdfs:subClassOf prov:Activity .
+tint:PublicationStatus a owl:Class ; rdfs:subClassOf skos:Concept .
+
+tint:belongsToSystem a owl:ObjectProperty ;
+    rdfs:domain [ a owl:Class ; owl:unionOf (tint:Remedy tint:HealthUseClaim tint:Practitioner) ] ;
+    rdfs:range tint:MedicalSystem .
+tint:hasIngredient a owl:ObjectProperty ; rdfs:domain tint:Remedy ; rdfs:range tint:Ingredient .
+tint:derivedFrom a owl:ObjectProperty ; rdfs:domain tint:Ingredient ; rdfs:range tint:BiologicalSource .
+tint:usesPart a owl:ObjectProperty ; rdfs:domain tint:Ingredient ; rdfs:range tint:PlantPart .
+tint:hasPreparationMethod a owl:ObjectProperty ; rdfs:domain tint:Remedy ; rdfs:range tint:PreparationMethod .
+tint:hasAdministrationRoute a owl:ObjectProperty ; rdfs:domain tint:HealthUseClaim ; rdfs:range tint:AdministrationRoute .
+tint:claimsUseOf a owl:ObjectProperty, owl:FunctionalProperty ; rdfs:domain tint:HealthUseClaim ; rdfs:range tint:Remedy .
+tint:hasTarget a owl:ObjectProperty ; rdfs:domain tint:HealthUseClaim ;
+    rdfs:range [ a owl:Class ; owl:unionOf (tint:HealthCondition tint:Symptom) ] .
+tint:hasOutcome a owl:ObjectProperty ; rdfs:domain tint:HealthUseClaim ; rdfs:range tint:IntendedOutcome .
+tint:appliesToPopulation a owl:ObjectProperty ; rdfs:domain tint:HealthUseClaim ; rdfs:range tint:PopulationGroup .
+tint:supportedBy a owl:ObjectProperty ; rdfs:domain tint:HealthUseClaim ; rdfs:range tint:EvidenceItem .
+tint:hasSafetyStatement a owl:ObjectProperty ; rdfs:domain tint:HealthUseClaim ; rdfs:range tint:SafetyStatement .
+tint:validInJurisdiction a owl:ObjectProperty ; rdfs:range tint:Jurisdiction .
+tint:hasCredential a owl:ObjectProperty ; rdfs:domain tint:Practitioner ; rdfs:range tint:Credential .
+tint:proposes a owl:ObjectProperty ; rdfs:domain tint:Contribution ; rdfs:range prov:Entity .
+tint:reviews a owl:ObjectProperty ; rdfs:domain tint:ReviewDecision ; rdfs:range tint:Contribution .
+tint:decidedBy a owl:ObjectProperty ; rdfs:domain tint:ReviewDecision ; rdfs:range tint:Reviewer .
+tint:publicationStatus a owl:ObjectProperty, owl:FunctionalProperty ; rdfs:range tint:PublicationStatus .
+
+tint:sourceCitation a owl:DatatypeProperty ; rdfs:domain tint:EvidenceItem ; rdfs:range xsd:string .
+tint:sourceIdentifier a owl:DatatypeProperty ; rdfs:domain tint:EvidenceItem ; rdfs:range xsd:string .
+tint:assessmentNote a owl:DatatypeProperty ; rdfs:range rdf:langString .
+tint:reviewedAt a owl:DatatypeProperty ; rdfs:range xsd:dateTime .
+tint:nextReviewDate a owl:DatatypeProperty ; rdfs:range xsd:date .
+tint:riskLevel a owl:DatatypeProperty ; rdfs:domain tint:HealthUseClaim ; rdfs:range xsd:string .
+tint:botanicalName a owl:DatatypeProperty ; rdfs:domain tint:Remedy ; rdfs:range xsd:string .
+tint:validationStatus a owl:DatatypeProperty ; rdfs:range xsd:string .
+tint:safetyCode a owl:DatatypeProperty ; rdfs:domain tint:SafetyStatement ; rdfs:range xsd:string .
+tint:evidenceType a owl:DatatypeProperty ; rdfs:domain tint:EvidenceItem ; rdfs:range xsd:string .
+
+tint:statusDraft a tint:PublicationStatus ; skos:prefLabel "Draft"@en, "मसौदा"@hi .
+tint:statusSubmitted a tint:PublicationStatus ; skos:prefLabel "Submitted"@en, "प्रस्तुत"@hi .
+tint:statusUnderReview a tint:PublicationStatus ; skos:prefLabel "Under review"@en, "समीक्षाधीन"@hi .
+tint:statusPublished a tint:PublicationStatus ; skos:prefLabel "Published"@en, "प्रकाशित"@hi .
+tint:statusChangesRequested a tint:PublicationStatus ; skos:prefLabel "Changes requested"@en, "परिवर्तन अपेक्षित"@hi .
+tint:statusRejected a tint:PublicationStatus ; skos:prefLabel "Rejected"@en, "अस्वीकृत"@hi .
+tint:statusDeprecated a tint:PublicationStatus ; skos:prefLabel "Deprecated"@en, "प्रचलन से हटाया गया"@hi .
+
+tint:ayurveda a tint:MedicalSystem ; skos:prefLabel "Ayurveda"@en, "आयुर्वेद"@hi .
+tint:yoga a tint:MedicalSystem ; skos:prefLabel "Yoga"@en, "योग"@hi .
+tint:naturopathy a tint:MedicalSystem ; skos:prefLabel "Naturopathy"@en, "प्राकृतिक चिकित्सा"@hi .
+tint:unani a tint:MedicalSystem ; skos:prefLabel "Unani"@en, "यूनानी"@hi .
+tint:siddha a tint:MedicalSystem ; skos:prefLabel "Siddha"@en, "सिद्ध"@hi .
+tint:sowaRigpa a tint:MedicalSystem ; skos:prefLabel "Sowa-Rigpa"@en, "सोवा-रिग्पा"@hi .
+tint:homoeopathy a tint:MedicalSystem ; skos:prefLabel "Homoeopathy"@en, "होम्योपैथी"@hi .
+tint:homeRemedyTradition a tint:MedicalSystem ; skos:prefLabel "Home remedy tradition"@en, "घरेलू उपचार परंपरा"@hi .

@@ -1,0 +1,13 @@
+{
+  "datasetId": "tint-pilot-2026-08",
+  "valid": true,
+  "generatedAt": "2026-08-26T00:00:00Z",
+  "counts": {
+    "remedies": 25,
+    "claims": 40,
+    "evidenceItems": 40,
+    "safetyStatements": 89,
+    "contributions": 40
+  },
+  "publishedClaims": 0
+}

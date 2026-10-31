@@ -1,0 +1,3129 @@
+{
+  "metadata": {
+    "id": "tint-pilot-2026-08",
+    "title": "TINT unvalidated pilot dataset",
+    "version": "0.1.0",
+    "generatedAt": "2026-08-26T00:00:00Z",
+    "validationStatus": "unvalidated",
+    "publicUseAllowed": false,
+    "disclaimer": "Synthetic development fixture. No health-use claim is approved medical guidance."
+  },
+  "systems": [
+    {
+      "id": "ayurveda",
+      "en": "Ayurveda",
+      "hi": "आयुर्वेद"
+    },
+    {
+      "id": "naturopathy",
+      "en": "Naturopathy",
+      "hi": "प्राकृतिक चिकित्सा"
+    },
+    {
+      "id": "home-remedy",
+      "en": "Home remedy tradition",
+      "hi": "घरेलू उपचार परंपरा"
+    }
+  ],
+  "populations": [
+    {
+      "id": "adults",
+      "en": "Adults",
+      "hi": "वयस्क"
+    },
+    {
+      "id": "adult-general",
+      "en": "General adult population",
+      "hi": "सामान्य वयस्क जनसंख्या"
+    },
+    {
+      "id": "adult-supervised",
+      "en": "Adults under practitioner supervision",
+      "hi": "चिकित्सक की देखरेख में वयस्क"
+    }
+  ],
+  "targets": [
+    {
+      "id": "nausea",
+      "en": "Nausea",
+      "hi": "मतली",
+      "type": "symptom"
+    },
+    {
+      "id": "throat-discomfort",
+      "en": "Throat discomfort",
+      "hi": "गले में परेशानी",
+      "type": "symptom"
+    },
+    {
+      "id": "cough",
+      "en": "Cough",
+      "hi": "खांसी",
+      "type": "symptom"
+    },
+    {
+      "id": "nasal-congestion",
+      "en": "Nasal congestion",
+      "hi": "नाक बंद होना",
+      "type": "symptom"
+    },
+    {
+      "id": "indigestion",
+      "en": "Indigestion",
+      "hi": "अपच",
+      "type": "symptom"
+    },
+    {
+      "id": "bloating",
+      "en": "Bloating",
+      "hi": "पेट फूलना",
+      "type": "symptom"
+    },
+    {
+      "id": "digestive-discomfort",
+      "en": "Digestive discomfort",
+      "hi": "पाचन संबंधी परेशानी",
+      "type": "symptom"
+    },
+    {
+      "id": "minor-skin-irritation",
+      "en": "Minor skin irritation",
+      "hi": "त्वचा की हल्की जलन",
+      "type": "symptom"
+    },
+    {
+      "id": "skin-hygiene-concern",
+      "en": "Skin hygiene concern",
+      "hi": "त्वचा की स्वच्छता संबंधी चिंता",
+      "type": "health-condition"
+    },
+    {
+      "id": "reduced-appetite",
+      "en": "Reduced appetite",
+      "hi": "भूख कम लगना",
+      "type": "symptom"
+    },
+    {
+      "id": "constipation",
+      "en": "Constipation",
+      "hi": "कब्ज",
+      "type": "health-condition"
+    },
+    {
+      "id": "stress",
+      "en": "Stress",
+      "hi": "तनाव",
+      "type": "symptom"
+    },
+    {
+      "id": "fatigue",
+      "en": "Fatigue",
+      "hi": "थकान",
+      "type": "symptom"
+    },
+    {
+      "id": "oral-discomfort",
+      "en": "Oral discomfort",
+      "hi": "मुंह में परेशानी",
+      "type": "symptom"
+    },
+    {
+      "id": "common-cold-discomfort",
+      "en": "Common-cold discomfort",
+      "hi": "सर्दी की परेशानी",
+      "type": "symptom"
+    },
+    {
+      "id": "dry-skin",
+      "en": "Dry skin",
+      "hi": "शुष्क त्वचा",
+      "type": "symptom"
+    },
+    {
+      "id": "muscle-discomfort",
+      "en": "Muscle discomfort",
+      "hi": "मांसपेशियों में परेशानी",
+      "type": "symptom"
+    },
+    {
+      "id": "joint-discomfort",
+      "en": "Joint discomfort",
+      "hi": "जोड़ों में परेशानी",
+      "type": "symptom"
+    }
+  ],
+  "remedies": [
+    {
+      "id": "remedy-0001",
+      "labels": {
+        "en": "Ginger infusion",
+        "hi": "अदरक का काढ़ा"
+      },
+      "altNames": [
+        "adrak tea",
+        "ginger tea"
+      ],
+      "botanicalName": "Zingiber officinale",
+      "plantPart": "rhizome",
+      "systemId": "ayurveda",
+      "route": "oral",
+      "preparation": "infusion",
+      "riskLevel": "moderate",
+      "safetyCodes": [
+        "pregnancy-caution",
+        "medicine-interaction-review"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0002",
+      "labels": {
+        "en": "Turmeric milk",
+        "hi": "हल्दी वाला दूध"
+      },
+      "altNames": [
+        "haldi doodh",
+        "golden milk"
+      ],
+      "botanicalName": "Curcuma longa",
+      "plantPart": "rhizome",
+      "systemId": "home-remedy",
+      "route": "oral",
+      "preparation": "warm-mixture",
+      "riskLevel": "moderate",
+      "safetyCodes": [
+        "allergy-caution",
+        "medicine-interaction-review"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0003",
+      "labels": {
+        "en": "Tulsi leaf infusion",
+        "hi": "तुलसी पत्ती का काढ़ा"
+      },
+      "altNames": [
+        "holy basil tea",
+        "tulasi infusion"
+      ],
+      "botanicalName": "Ocimum tenuiflorum",
+      "plantPart": "leaf",
+      "systemId": "ayurveda",
+      "route": "oral",
+      "preparation": "infusion",
+      "riskLevel": "moderate",
+      "safetyCodes": [
+        "pregnancy-caution",
+        "medicine-interaction-review"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0004",
+      "labels": {
+        "en": "Ajwain water",
+        "hi": "अजवाइन का पानी"
+      },
+      "altNames": [
+        "carom water",
+        "ajowan water"
+      ],
+      "botanicalName": "Trachyspermum ammi",
+      "plantPart": "fruit",
+      "systemId": "home-remedy",
+      "route": "oral",
+      "preparation": "infusion",
+      "riskLevel": "moderate",
+      "safetyCodes": [
+        "pregnancy-caution",
+        "dose-review-required"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0005",
+      "labels": {
+        "en": "Fennel seed infusion",
+        "hi": "सौंफ का पानी"
+      },
+      "altNames": [
+        "saunf water",
+        "fennel tea"
+      ],
+      "botanicalName": "Foeniculum vulgare",
+      "plantPart": "fruit",
+      "systemId": "home-remedy",
+      "route": "oral",
+      "preparation": "infusion",
+      "riskLevel": "low",
+      "safetyCodes": [
+        "allergy-caution"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0006",
+      "labels": {
+        "en": "Cumin water",
+        "hi": "जीरे का पानी"
+      },
+      "altNames": [
+        "jeera water"
+      ],
+      "botanicalName": "Cuminum cyminum",
+      "plantPart": "fruit",
+      "systemId": "home-remedy",
+      "route": "oral",
+      "preparation": "infusion",
+      "riskLevel": "low",
+      "safetyCodes": [
+        "allergy-caution"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0007",
+      "labels": {
+        "en": "Coriander seed water",
+        "hi": "धनिया का पानी"
+      },
+      "altNames": [
+        "dhania water"
+      ],
+      "botanicalName": "Coriandrum sativum",
+      "plantPart": "fruit",
+      "systemId": "home-remedy",
+      "route": "oral",
+      "preparation": "infusion",
+      "riskLevel": "low",
+      "safetyCodes": [
+        "allergy-caution"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0008",
+      "labels": {
+        "en": "Mint leaf infusion",
+        "hi": "पुदीना पत्ती का काढ़ा"
+      },
+      "altNames": [
+        "pudina tea",
+        "mint tea"
+      ],
+      "botanicalName": "Mentha spicata",
+      "plantPart": "leaf",
+      "systemId": "home-remedy",
+      "route": "oral",
+      "preparation": "infusion",
+      "riskLevel": "moderate",
+      "safetyCodes": [
+        "reflux-caution",
+        "child-caution"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0009",
+      "labels": {
+        "en": "Aloe vera gel",
+        "hi": "घृतकुमारी जेल"
+      },
+      "altNames": [
+        "aloe gel",
+        "gheekumari gel"
+      ],
+      "botanicalName": "Aloe vera",
+      "plantPart": "leaf-gel",
+      "systemId": "naturopathy",
+      "route": "topical",
+      "preparation": "fresh-gel",
+      "riskLevel": "moderate",
+      "safetyCodes": [
+        "external-use-only",
+        "patch-test"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0010",
+      "labels": {
+        "en": "Neem leaf wash",
+        "hi": "नीम पत्ती का धोवन"
+      },
+      "altNames": [
+        "neem rinse"
+      ],
+      "botanicalName": "Azadirachta indica",
+      "plantPart": "leaf",
+      "systemId": "ayurveda",
+      "route": "topical",
+      "preparation": "wash",
+      "riskLevel": "high",
+      "safetyCodes": [
+        "external-use-only",
+        "pregnancy-caution",
+        "child-caution"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0011",
+      "labels": {
+        "en": "Amla preparation",
+        "hi": "आंवला तैयारी"
+      },
+      "altNames": [
+        "amalaki preparation",
+        "Indian gooseberry preparation"
+      ],
+      "botanicalName": "Phyllanthus emblica",
+      "plantPart": "fruit",
+      "systemId": "ayurveda",
+      "route": "oral",
+      "preparation": "food-preparation",
+      "riskLevel": "moderate",
+      "safetyCodes": [
+        "medicine-interaction-review",
+        "allergy-caution"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0012",
+      "labels": {
+        "en": "Triphala preparation",
+        "hi": "त्रिफला तैयारी"
+      },
+      "altNames": [
+        "triphala"
+      ],
+      "botanicalName": null,
+      "plantPart": "mixed-fruit",
+      "systemId": "ayurveda",
+      "route": "oral",
+      "preparation": "powder-or-infusion",
+      "riskLevel": "high",
+      "safetyCodes": [
+        "practitioner-supervision",
+        "pregnancy-caution",
+        "medicine-interaction-review"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0013",
+      "labels": {
+        "en": "Ashwagandha preparation",
+        "hi": "अश्वगंधा तैयारी"
+      },
+      "altNames": [
+        "Indian ginseng preparation"
+      ],
+      "botanicalName": "Withania somnifera",
+      "plantPart": "root",
+      "systemId": "ayurveda",
+      "route": "oral",
+      "preparation": "powder-or-extract",
+      "riskLevel": "high",
+      "safetyCodes": [
+        "practitioner-supervision",
+        "pregnancy-caution",
+        "thyroid-caution",
+        "sedative-interaction"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0014",
+      "labels": {
+        "en": "Liquorice root infusion",
+        "hi": "मुलेठी का काढ़ा"
+      },
+      "altNames": [
+        "mulethi tea",
+        "licorice root tea"
+      ],
+      "botanicalName": "Glycyrrhiza glabra",
+      "plantPart": "root",
+      "systemId": "ayurveda",
+      "route": "oral",
+      "preparation": "infusion",
+      "riskLevel": "high",
+      "safetyCodes": [
+        "hypertension-caution",
+        "pregnancy-caution",
+        "medicine-interaction-review"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0015",
+      "labels": {
+        "en": "Cinnamon infusion",
+        "hi": "दालचीनी का काढ़ा"
+      },
+      "altNames": [
+        "dalchini tea"
+      ],
+      "botanicalName": "Cinnamomum verum",
+      "plantPart": "bark",
+      "systemId": "home-remedy",
+      "route": "oral",
+      "preparation": "infusion",
+      "riskLevel": "moderate",
+      "safetyCodes": [
+        "medicine-interaction-review",
+        "liver-caution"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0016",
+      "labels": {
+        "en": "Clove preparation",
+        "hi": "लौंग की तैयारी"
+      },
+      "altNames": [
+        "laung preparation"
+      ],
+      "botanicalName": "Syzygium aromaticum",
+      "plantPart": "flower-bud",
+      "systemId": "home-remedy",
+      "route": "oral",
+      "preparation": "whole-or-infusion",
+      "riskLevel": "high",
+      "safetyCodes": [
+        "oral-burn-caution",
+        "medicine-interaction-review",
+        "child-caution"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0017",
+      "labels": {
+        "en": "Cardamom infusion",
+        "hi": "इलायची का काढ़ा"
+      },
+      "altNames": [
+        "elaichi tea"
+      ],
+      "botanicalName": "Elettaria cardamomum",
+      "plantPart": "fruit",
+      "systemId": "home-remedy",
+      "route": "oral",
+      "preparation": "infusion",
+      "riskLevel": "low",
+      "safetyCodes": [
+        "allergy-caution"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0018",
+      "labels": {
+        "en": "Fenugreek seed preparation",
+        "hi": "मेथी दाना तैयारी"
+      },
+      "altNames": [
+        "methi seed preparation"
+      ],
+      "botanicalName": "Trigonella foenum-graecum",
+      "plantPart": "seed",
+      "systemId": "ayurveda",
+      "route": "oral",
+      "preparation": "soaked-or-cooked",
+      "riskLevel": "high",
+      "safetyCodes": [
+        "pregnancy-caution",
+        "medicine-interaction-review",
+        "allergy-caution"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0019",
+      "labels": {
+        "en": "Garlic preparation",
+        "hi": "लहसुन की तैयारी"
+      },
+      "altNames": [
+        "lahsun preparation"
+      ],
+      "botanicalName": "Allium sativum",
+      "plantPart": "bulb",
+      "systemId": "home-remedy",
+      "route": "oral",
+      "preparation": "food-preparation",
+      "riskLevel": "high",
+      "safetyCodes": [
+        "bleeding-risk",
+        "surgery-caution",
+        "medicine-interaction-review"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0020",
+      "labels": {
+        "en": "Honey in warm water",
+        "hi": "गुनगुने पानी में शहद"
+      },
+      "altNames": [
+        "warm honey water"
+      ],
+      "botanicalName": null,
+      "plantPart": "food-product",
+      "systemId": "home-remedy",
+      "route": "oral",
+      "preparation": "warm-mixture",
+      "riskLevel": "high",
+      "safetyCodes": [
+        "infant-contraindication",
+        "diabetes-caution",
+        "allergy-caution"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0021",
+      "labels": {
+        "en": "Lemon water",
+        "hi": "नींबू पानी"
+      },
+      "altNames": [
+        "nimbu pani"
+      ],
+      "botanicalName": "Citrus limon",
+      "plantPart": "fruit-juice",
+      "systemId": "home-remedy",
+      "route": "oral",
+      "preparation": "dilution",
+      "riskLevel": "low",
+      "safetyCodes": [
+        "dental-erosion-caution",
+        "reflux-caution"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0022",
+      "labels": {
+        "en": "Warm saline gargle",
+        "hi": "गुनगुने नमक पानी के गरारे"
+      },
+      "altNames": [
+        "salt-water gargle"
+      ],
+      "botanicalName": null,
+      "plantPart": "mineral-solution",
+      "systemId": "home-remedy",
+      "route": "gargle",
+      "preparation": "dissolution",
+      "riskLevel": "moderate",
+      "safetyCodes": [
+        "do-not-swallow",
+        "child-caution",
+        "sodium-caution"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0023",
+      "labels": {
+        "en": "Coconut oil application",
+        "hi": "नारियल तेल का प्रयोग"
+      },
+      "altNames": [
+        "coconut oil rub"
+      ],
+      "botanicalName": "Cocos nucifera",
+      "plantPart": "fruit-oil",
+      "systemId": "home-remedy",
+      "route": "topical",
+      "preparation": "direct-application",
+      "riskLevel": "low",
+      "safetyCodes": [
+        "patch-test",
+        "slip-hazard"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0024",
+      "labels": {
+        "en": "Sesame oil application",
+        "hi": "तिल तेल का प्रयोग"
+      },
+      "altNames": [
+        "til oil massage",
+        "sesame oil massage"
+      ],
+      "botanicalName": "Sesamum indicum",
+      "plantPart": "seed-oil",
+      "systemId": "ayurveda",
+      "route": "massage",
+      "preparation": "direct-application",
+      "riskLevel": "moderate",
+      "safetyCodes": [
+        "allergy-caution",
+        "patch-test"
+      ],
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "remedy-0025",
+      "labels": {
+        "en": "Psyllium husk in water",
+        "hi": "इसबगोल पानी में"
+      },
+      "altNames": [
+        "isabgol water",
+        "ispaghula husk"
+      ],
+      "botanicalName": "Plantago ovata",
+      "plantPart": "seed-husk",
+      "systemId": "ayurveda",
+      "route": "oral",
+      "preparation": "dispersion",
+      "riskLevel": "high",
+      "safetyCodes": [
+        "adequate-water-required",
+        "obstruction-caution",
+        "medicine-separation"
+      ],
+      "validationStatus": "unvalidated"
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-000001",
+      "labels": {
+        "en": "Proposed traditional use of Ginger infusion for nausea",
+        "hi": "मतली के लिए अदरक का काढ़ा का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0001",
+      "targetId": "nausea",
+      "systemId": "ayurveda",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000001"
+      ],
+      "safetyStatementIds": [
+        "claim-000001-safety-1",
+        "claim-000001-safety-2"
+      ],
+      "riskLevel": "moderate",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "submitted",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000001",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000002",
+      "labels": {
+        "en": "Proposed traditional use of Ginger infusion for throat discomfort",
+        "hi": "गले में परेशानी के लिए अदरक का काढ़ा का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0001",
+      "targetId": "throat-discomfort",
+      "systemId": "ayurveda",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000002"
+      ],
+      "safetyStatementIds": [
+        "claim-000002-safety-1",
+        "claim-000002-safety-2"
+      ],
+      "riskLevel": "moderate",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "under-review",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000002",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000003",
+      "labels": {
+        "en": "Proposed traditional use of Ginger infusion for indigestion",
+        "hi": "अपच के लिए अदरक का काढ़ा का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0001",
+      "targetId": "indigestion",
+      "systemId": "ayurveda",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000003"
+      ],
+      "safetyStatementIds": [
+        "claim-000003-safety-1",
+        "claim-000003-safety-2"
+      ],
+      "riskLevel": "moderate",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "changes-requested",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000003",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000004",
+      "labels": {
+        "en": "Proposed traditional use of Turmeric milk for throat discomfort",
+        "hi": "गले में परेशानी के लिए हल्दी वाला दूध का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0002",
+      "targetId": "throat-discomfort",
+      "systemId": "home-remedy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000004"
+      ],
+      "safetyStatementIds": [
+        "claim-000004-safety-1",
+        "claim-000004-safety-2"
+      ],
+      "riskLevel": "moderate",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "submitted",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000004",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000005",
+      "labels": {
+        "en": "Proposed traditional use of Turmeric milk for joint discomfort",
+        "hi": "जोड़ों में परेशानी के लिए हल्दी वाला दूध का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0002",
+      "targetId": "joint-discomfort",
+      "systemId": "home-remedy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000005"
+      ],
+      "safetyStatementIds": [
+        "claim-000005-safety-1",
+        "claim-000005-safety-2"
+      ],
+      "riskLevel": "moderate",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "under-review",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000005",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000006",
+      "labels": {
+        "en": "Proposed traditional use of Tulsi leaf infusion for cough",
+        "hi": "खांसी के लिए तुलसी पत्ती का काढ़ा का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0003",
+      "targetId": "cough",
+      "systemId": "ayurveda",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000006"
+      ],
+      "safetyStatementIds": [
+        "claim-000006-safety-1",
+        "claim-000006-safety-2"
+      ],
+      "riskLevel": "moderate",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "changes-requested",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000006",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000007",
+      "labels": {
+        "en": "Proposed traditional use of Tulsi leaf infusion for nasal congestion",
+        "hi": "नाक बंद होना के लिए तुलसी पत्ती का काढ़ा का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0003",
+      "targetId": "nasal-congestion",
+      "systemId": "ayurveda",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000007"
+      ],
+      "safetyStatementIds": [
+        "claim-000007-safety-1",
+        "claim-000007-safety-2"
+      ],
+      "riskLevel": "moderate",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "submitted",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000007",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000008",
+      "labels": {
+        "en": "Proposed traditional use of Tulsi leaf infusion for throat discomfort",
+        "hi": "गले में परेशानी के लिए तुलसी पत्ती का काढ़ा का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0003",
+      "targetId": "throat-discomfort",
+      "systemId": "ayurveda",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000008"
+      ],
+      "safetyStatementIds": [
+        "claim-000008-safety-1",
+        "claim-000008-safety-2"
+      ],
+      "riskLevel": "moderate",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "under-review",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000008",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000009",
+      "labels": {
+        "en": "Proposed traditional use of Ajwain water for indigestion",
+        "hi": "अपच के लिए अजवाइन का पानी का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0004",
+      "targetId": "indigestion",
+      "systemId": "home-remedy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000009"
+      ],
+      "safetyStatementIds": [
+        "claim-000009-safety-1",
+        "claim-000009-safety-2"
+      ],
+      "riskLevel": "moderate",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "changes-requested",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000009",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000010",
+      "labels": {
+        "en": "Proposed traditional use of Ajwain water for bloating",
+        "hi": "पेट फूलना के लिए अजवाइन का पानी का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0004",
+      "targetId": "bloating",
+      "systemId": "home-remedy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000010"
+      ],
+      "safetyStatementIds": [
+        "claim-000010-safety-1",
+        "claim-000010-safety-2"
+      ],
+      "riskLevel": "moderate",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "submitted",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000010",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000011",
+      "labels": {
+        "en": "Proposed traditional use of Fennel seed infusion for bloating",
+        "hi": "पेट फूलना के लिए सौंफ का पानी का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0005",
+      "targetId": "bloating",
+      "systemId": "home-remedy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000011"
+      ],
+      "safetyStatementIds": [
+        "claim-000011-safety-1"
+      ],
+      "riskLevel": "low",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "under-review",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000011",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000012",
+      "labels": {
+        "en": "Proposed traditional use of Fennel seed infusion for digestive discomfort",
+        "hi": "पाचन संबंधी परेशानी के लिए सौंफ का पानी का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0005",
+      "targetId": "digestive-discomfort",
+      "systemId": "home-remedy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000012"
+      ],
+      "safetyStatementIds": [
+        "claim-000012-safety-1"
+      ],
+      "riskLevel": "low",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "changes-requested",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000012",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000013",
+      "labels": {
+        "en": "Proposed traditional use of Cumin water for digestive discomfort",
+        "hi": "पाचन संबंधी परेशानी के लिए जीरे का पानी का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0006",
+      "targetId": "digestive-discomfort",
+      "systemId": "home-remedy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000013"
+      ],
+      "safetyStatementIds": [
+        "claim-000013-safety-1"
+      ],
+      "riskLevel": "low",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "submitted",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000013",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000014",
+      "labels": {
+        "en": "Proposed traditional use of Cumin water for bloating",
+        "hi": "पेट फूलना के लिए जीरे का पानी का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0006",
+      "targetId": "bloating",
+      "systemId": "home-remedy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000014"
+      ],
+      "safetyStatementIds": [
+        "claim-000014-safety-1"
+      ],
+      "riskLevel": "low",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "under-review",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000014",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000015",
+      "labels": {
+        "en": "Proposed traditional use of Coriander seed water for digestive discomfort",
+        "hi": "पाचन संबंधी परेशानी के लिए धनिया का पानी का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0007",
+      "targetId": "digestive-discomfort",
+      "systemId": "home-remedy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000015"
+      ],
+      "safetyStatementIds": [
+        "claim-000015-safety-1"
+      ],
+      "riskLevel": "low",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "changes-requested",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000015",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000016",
+      "labels": {
+        "en": "Proposed traditional use of Mint leaf infusion for indigestion",
+        "hi": "अपच के लिए पुदीना पत्ती का काढ़ा का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0008",
+      "targetId": "indigestion",
+      "systemId": "home-remedy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000016"
+      ],
+      "safetyStatementIds": [
+        "claim-000016-safety-1",
+        "claim-000016-safety-2"
+      ],
+      "riskLevel": "moderate",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "submitted",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000016",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000017",
+      "labels": {
+        "en": "Proposed traditional use of Mint leaf infusion for nausea",
+        "hi": "मतली के लिए पुदीना पत्ती का काढ़ा का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0008",
+      "targetId": "nausea",
+      "systemId": "home-remedy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000017"
+      ],
+      "safetyStatementIds": [
+        "claim-000017-safety-1",
+        "claim-000017-safety-2"
+      ],
+      "riskLevel": "moderate",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "under-review",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000017",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000018",
+      "labels": {
+        "en": "Proposed traditional use of Aloe vera gel for minor skin irritation",
+        "hi": "त्वचा की हल्की जलन के लिए घृतकुमारी जेल का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0009",
+      "targetId": "minor-skin-irritation",
+      "systemId": "naturopathy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "topical",
+      "evidenceIds": [
+        "evidence-000018"
+      ],
+      "safetyStatementIds": [
+        "claim-000018-safety-1",
+        "claim-000018-safety-2"
+      ],
+      "riskLevel": "moderate",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "changes-requested",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000018",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000019",
+      "labels": {
+        "en": "Proposed traditional use of Aloe vera gel for dry skin",
+        "hi": "शुष्क त्वचा के लिए घृतकुमारी जेल का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0009",
+      "targetId": "dry-skin",
+      "systemId": "naturopathy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "topical",
+      "evidenceIds": [
+        "evidence-000019"
+      ],
+      "safetyStatementIds": [
+        "claim-000019-safety-1",
+        "claim-000019-safety-2"
+      ],
+      "riskLevel": "moderate",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "submitted",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000019",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000020",
+      "labels": {
+        "en": "Proposed traditional use of Neem leaf wash for skin hygiene concern",
+        "hi": "त्वचा की स्वच्छता संबंधी चिंता के लिए नीम पत्ती का धोवन का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0010",
+      "targetId": "skin-hygiene-concern",
+      "systemId": "ayurveda",
+      "intendedOutcome": "support-hygiene",
+      "populationId": "adult-supervised",
+      "route": "topical",
+      "evidenceIds": [
+        "evidence-000020"
+      ],
+      "safetyStatementIds": [
+        "claim-000020-safety-1",
+        "claim-000020-safety-2",
+        "claim-000020-safety-3"
+      ],
+      "riskLevel": "high",
+      "requiresPractitionerSupervision": true,
+      "publicationStatus": "under-review",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000020",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000021",
+      "labels": {
+        "en": "Proposed traditional use of Amla preparation for reduced appetite",
+        "hi": "भूख कम लगना के लिए आंवला तैयारी का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0011",
+      "targetId": "reduced-appetite",
+      "systemId": "ayurveda",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000021"
+      ],
+      "safetyStatementIds": [
+        "claim-000021-safety-1",
+        "claim-000021-safety-2"
+      ],
+      "riskLevel": "moderate",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "changes-requested",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000021",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000022",
+      "labels": {
+        "en": "Proposed traditional use of Amla preparation for fatigue",
+        "hi": "थकान के लिए आंवला तैयारी का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0011",
+      "targetId": "fatigue",
+      "systemId": "ayurveda",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000022"
+      ],
+      "safetyStatementIds": [
+        "claim-000022-safety-1",
+        "claim-000022-safety-2"
+      ],
+      "riskLevel": "moderate",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "submitted",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000022",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000023",
+      "labels": {
+        "en": "Proposed traditional use of Triphala preparation for constipation",
+        "hi": "कब्ज के लिए त्रिफला तैयारी का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0012",
+      "targetId": "constipation",
+      "systemId": "ayurveda",
+      "intendedOutcome": "relief",
+      "populationId": "adult-supervised",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000023"
+      ],
+      "safetyStatementIds": [
+        "claim-000023-safety-1",
+        "claim-000023-safety-2",
+        "claim-000023-safety-3"
+      ],
+      "riskLevel": "high",
+      "requiresPractitionerSupervision": true,
+      "publicationStatus": "under-review",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000023",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000024",
+      "labels": {
+        "en": "Proposed traditional use of Triphala preparation for digestive discomfort",
+        "hi": "पाचन संबंधी परेशानी के लिए त्रिफला तैयारी का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0012",
+      "targetId": "digestive-discomfort",
+      "systemId": "ayurveda",
+      "intendedOutcome": "relief",
+      "populationId": "adult-supervised",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000024"
+      ],
+      "safetyStatementIds": [
+        "claim-000024-safety-1",
+        "claim-000024-safety-2",
+        "claim-000024-safety-3"
+      ],
+      "riskLevel": "high",
+      "requiresPractitionerSupervision": true,
+      "publicationStatus": "changes-requested",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000024",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000025",
+      "labels": {
+        "en": "Proposed traditional use of Ashwagandha preparation for stress",
+        "hi": "तनाव के लिए अश्वगंधा तैयारी का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0013",
+      "targetId": "stress",
+      "systemId": "ayurveda",
+      "intendedOutcome": "relief",
+      "populationId": "adult-supervised",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000025"
+      ],
+      "safetyStatementIds": [
+        "claim-000025-safety-1",
+        "claim-000025-safety-2",
+        "claim-000025-safety-3",
+        "claim-000025-safety-4"
+      ],
+      "riskLevel": "high",
+      "requiresPractitionerSupervision": true,
+      "publicationStatus": "submitted",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000025",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000026",
+      "labels": {
+        "en": "Proposed traditional use of Ashwagandha preparation for fatigue",
+        "hi": "थकान के लिए अश्वगंधा तैयारी का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0013",
+      "targetId": "fatigue",
+      "systemId": "ayurveda",
+      "intendedOutcome": "relief",
+      "populationId": "adult-supervised",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000026"
+      ],
+      "safetyStatementIds": [
+        "claim-000026-safety-1",
+        "claim-000026-safety-2",
+        "claim-000026-safety-3",
+        "claim-000026-safety-4"
+      ],
+      "riskLevel": "high",
+      "requiresPractitionerSupervision": true,
+      "publicationStatus": "under-review",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000026",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000027",
+      "labels": {
+        "en": "Proposed traditional use of Liquorice root infusion for throat discomfort",
+        "hi": "गले में परेशानी के लिए मुलेठी का काढ़ा का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0014",
+      "targetId": "throat-discomfort",
+      "systemId": "ayurveda",
+      "intendedOutcome": "relief",
+      "populationId": "adult-supervised",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000027"
+      ],
+      "safetyStatementIds": [
+        "claim-000027-safety-1",
+        "claim-000027-safety-2",
+        "claim-000027-safety-3"
+      ],
+      "riskLevel": "high",
+      "requiresPractitionerSupervision": true,
+      "publicationStatus": "changes-requested",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000027",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000028",
+      "labels": {
+        "en": "Proposed traditional use of Liquorice root infusion for cough",
+        "hi": "खांसी के लिए मुलेठी का काढ़ा का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0014",
+      "targetId": "cough",
+      "systemId": "ayurveda",
+      "intendedOutcome": "relief",
+      "populationId": "adult-supervised",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000028"
+      ],
+      "safetyStatementIds": [
+        "claim-000028-safety-1",
+        "claim-000028-safety-2",
+        "claim-000028-safety-3"
+      ],
+      "riskLevel": "high",
+      "requiresPractitionerSupervision": true,
+      "publicationStatus": "submitted",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000028",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000029",
+      "labels": {
+        "en": "Proposed traditional use of Cinnamon infusion for digestive discomfort",
+        "hi": "पाचन संबंधी परेशानी के लिए दालचीनी का काढ़ा का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0015",
+      "targetId": "digestive-discomfort",
+      "systemId": "home-remedy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000029"
+      ],
+      "safetyStatementIds": [
+        "claim-000029-safety-1",
+        "claim-000029-safety-2"
+      ],
+      "riskLevel": "moderate",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "under-review",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000029",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000030",
+      "labels": {
+        "en": "Proposed traditional use of Clove preparation for oral discomfort",
+        "hi": "मुंह में परेशानी के लिए लौंग की तैयारी का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0016",
+      "targetId": "oral-discomfort",
+      "systemId": "home-remedy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-supervised",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000030"
+      ],
+      "safetyStatementIds": [
+        "claim-000030-safety-1",
+        "claim-000030-safety-2",
+        "claim-000030-safety-3"
+      ],
+      "riskLevel": "high",
+      "requiresPractitionerSupervision": true,
+      "publicationStatus": "changes-requested",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000030",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000031",
+      "labels": {
+        "en": "Proposed traditional use of Cardamom infusion for digestive discomfort",
+        "hi": "पाचन संबंधी परेशानी के लिए इलायची का काढ़ा का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0017",
+      "targetId": "digestive-discomfort",
+      "systemId": "home-remedy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000031"
+      ],
+      "safetyStatementIds": [
+        "claim-000031-safety-1"
+      ],
+      "riskLevel": "low",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "submitted",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000031",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000032",
+      "labels": {
+        "en": "Proposed traditional use of Fenugreek seed preparation for digestive discomfort",
+        "hi": "पाचन संबंधी परेशानी के लिए मेथी दाना तैयारी का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0018",
+      "targetId": "digestive-discomfort",
+      "systemId": "ayurveda",
+      "intendedOutcome": "relief",
+      "populationId": "adult-supervised",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000032"
+      ],
+      "safetyStatementIds": [
+        "claim-000032-safety-1",
+        "claim-000032-safety-2",
+        "claim-000032-safety-3"
+      ],
+      "riskLevel": "high",
+      "requiresPractitionerSupervision": true,
+      "publicationStatus": "under-review",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000032",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000033",
+      "labels": {
+        "en": "Proposed traditional use of Garlic preparation for common-cold discomfort",
+        "hi": "सर्दी की परेशानी के लिए लहसुन की तैयारी का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0019",
+      "targetId": "common-cold-discomfort",
+      "systemId": "home-remedy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-supervised",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000033"
+      ],
+      "safetyStatementIds": [
+        "claim-000033-safety-1",
+        "claim-000033-safety-2",
+        "claim-000033-safety-3"
+      ],
+      "riskLevel": "high",
+      "requiresPractitionerSupervision": true,
+      "publicationStatus": "changes-requested",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000033",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000034",
+      "labels": {
+        "en": "Proposed traditional use of Honey in warm water for cough",
+        "hi": "खांसी के लिए गुनगुने पानी में शहद का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0020",
+      "targetId": "cough",
+      "systemId": "home-remedy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-supervised",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000034"
+      ],
+      "safetyStatementIds": [
+        "claim-000034-safety-1",
+        "claim-000034-safety-2",
+        "claim-000034-safety-3"
+      ],
+      "riskLevel": "high",
+      "requiresPractitionerSupervision": true,
+      "publicationStatus": "submitted",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000034",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000035",
+      "labels": {
+        "en": "Proposed traditional use of Honey in warm water for throat discomfort",
+        "hi": "गले में परेशानी के लिए गुनगुने पानी में शहद का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0020",
+      "targetId": "throat-discomfort",
+      "systemId": "home-remedy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-supervised",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000035"
+      ],
+      "safetyStatementIds": [
+        "claim-000035-safety-1",
+        "claim-000035-safety-2",
+        "claim-000035-safety-3"
+      ],
+      "riskLevel": "high",
+      "requiresPractitionerSupervision": true,
+      "publicationStatus": "under-review",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000035",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000036",
+      "labels": {
+        "en": "Proposed traditional use of Lemon water for nausea",
+        "hi": "मतली के लिए नींबू पानी का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0021",
+      "targetId": "nausea",
+      "systemId": "home-remedy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000036"
+      ],
+      "safetyStatementIds": [
+        "claim-000036-safety-1",
+        "claim-000036-safety-2"
+      ],
+      "riskLevel": "low",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "changes-requested",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000036",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000037",
+      "labels": {
+        "en": "Proposed traditional use of Lemon water for throat discomfort",
+        "hi": "गले में परेशानी के लिए नींबू पानी का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0021",
+      "targetId": "throat-discomfort",
+      "systemId": "home-remedy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "oral",
+      "evidenceIds": [
+        "evidence-000037"
+      ],
+      "safetyStatementIds": [
+        "claim-000037-safety-1",
+        "claim-000037-safety-2"
+      ],
+      "riskLevel": "low",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "submitted",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000037",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000038",
+      "labels": {
+        "en": "Proposed traditional use of Warm saline gargle for throat discomfort",
+        "hi": "गले में परेशानी के लिए गुनगुने नमक पानी के गरारे का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0022",
+      "targetId": "throat-discomfort",
+      "systemId": "home-remedy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "gargle",
+      "evidenceIds": [
+        "evidence-000038"
+      ],
+      "safetyStatementIds": [
+        "claim-000038-safety-1",
+        "claim-000038-safety-2",
+        "claim-000038-safety-3"
+      ],
+      "riskLevel": "moderate",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "under-review",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000038",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000039",
+      "labels": {
+        "en": "Proposed traditional use of Coconut oil application for dry skin",
+        "hi": "शुष्क त्वचा के लिए नारियल तेल का प्रयोग का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0023",
+      "targetId": "dry-skin",
+      "systemId": "home-remedy",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "topical",
+      "evidenceIds": [
+        "evidence-000039"
+      ],
+      "safetyStatementIds": [
+        "claim-000039-safety-1",
+        "claim-000039-safety-2"
+      ],
+      "riskLevel": "low",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "changes-requested",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000039",
+      "publicDisplayAllowed": false
+    },
+    {
+      "id": "claim-000040",
+      "labels": {
+        "en": "Proposed traditional use of Sesame oil application for muscle discomfort",
+        "hi": "मांसपेशियों में परेशानी के लिए तिल तेल का प्रयोग का प्रस्तावित पारंपरिक उपयोग"
+      },
+      "remedyId": "remedy-0024",
+      "targetId": "muscle-discomfort",
+      "systemId": "ayurveda",
+      "intendedOutcome": "relief",
+      "populationId": "adult-general",
+      "route": "massage",
+      "evidenceIds": [
+        "evidence-000040"
+      ],
+      "safetyStatementIds": [
+        "claim-000040-safety-1",
+        "claim-000040-safety-2"
+      ],
+      "riskLevel": "moderate",
+      "requiresPractitionerSupervision": false,
+      "publicationStatus": "submitted",
+      "validationStatus": "unvalidated",
+      "contributionId": "contribution-000040",
+      "publicDisplayAllowed": false
+    }
+  ],
+  "evidence": [
+    {
+      "id": "evidence-000001",
+      "type": "traditional-use-placeholder",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000001"
+    },
+    {
+      "id": "evidence-000002",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000002"
+    },
+    {
+      "id": "evidence-000003",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000003"
+    },
+    {
+      "id": "evidence-000004",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000004"
+    },
+    {
+      "id": "evidence-000005",
+      "type": "traditional-use-placeholder",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000005"
+    },
+    {
+      "id": "evidence-000006",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000006"
+    },
+    {
+      "id": "evidence-000007",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000007"
+    },
+    {
+      "id": "evidence-000008",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000008"
+    },
+    {
+      "id": "evidence-000009",
+      "type": "traditional-use-placeholder",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000009"
+    },
+    {
+      "id": "evidence-000010",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000010"
+    },
+    {
+      "id": "evidence-000011",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000011"
+    },
+    {
+      "id": "evidence-000012",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000012"
+    },
+    {
+      "id": "evidence-000013",
+      "type": "traditional-use-placeholder",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000013"
+    },
+    {
+      "id": "evidence-000014",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000014"
+    },
+    {
+      "id": "evidence-000015",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000015"
+    },
+    {
+      "id": "evidence-000016",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000016"
+    },
+    {
+      "id": "evidence-000017",
+      "type": "traditional-use-placeholder",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000017"
+    },
+    {
+      "id": "evidence-000018",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000018"
+    },
+    {
+      "id": "evidence-000019",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000019"
+    },
+    {
+      "id": "evidence-000020",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000020"
+    },
+    {
+      "id": "evidence-000021",
+      "type": "traditional-use-placeholder",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000021"
+    },
+    {
+      "id": "evidence-000022",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000022"
+    },
+    {
+      "id": "evidence-000023",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000023"
+    },
+    {
+      "id": "evidence-000024",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000024"
+    },
+    {
+      "id": "evidence-000025",
+      "type": "traditional-use-placeholder",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000025"
+    },
+    {
+      "id": "evidence-000026",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000026"
+    },
+    {
+      "id": "evidence-000027",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000027"
+    },
+    {
+      "id": "evidence-000028",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000028"
+    },
+    {
+      "id": "evidence-000029",
+      "type": "traditional-use-placeholder",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000029"
+    },
+    {
+      "id": "evidence-000030",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000030"
+    },
+    {
+      "id": "evidence-000031",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000031"
+    },
+    {
+      "id": "evidence-000032",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000032"
+    },
+    {
+      "id": "evidence-000033",
+      "type": "traditional-use-placeholder",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000033"
+    },
+    {
+      "id": "evidence-000034",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000034"
+    },
+    {
+      "id": "evidence-000035",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000035"
+    },
+    {
+      "id": "evidence-000036",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000036"
+    },
+    {
+      "id": "evidence-000037",
+      "type": "traditional-use-placeholder",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000037"
+    },
+    {
+      "id": "evidence-000038",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000038"
+    },
+    {
+      "id": "evidence-000039",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000039"
+    },
+    {
+      "id": "evidence-000040",
+      "type": "source-required",
+      "citation": "PLACEHOLDER: authoritative source and exact passage must be supplied during validation.",
+      "assessment": "Not assessed",
+      "validationStatus": "unvalidated",
+      "supportsClaimId": "claim-000040"
+    }
+  ],
+  "safetyStatements": [
+    {
+      "id": "claim-000001-safety-1",
+      "claimId": "claim-000001",
+      "code": "pregnancy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000001-safety-2",
+      "claimId": "claim-000001",
+      "code": "medicine-interaction-review",
+      "type": "interaction",
+      "text": "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000002-safety-1",
+      "claimId": "claim-000002",
+      "code": "pregnancy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000002-safety-2",
+      "claimId": "claim-000002",
+      "code": "medicine-interaction-review",
+      "type": "interaction",
+      "text": "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000003-safety-1",
+      "claimId": "claim-000003",
+      "code": "pregnancy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000003-safety-2",
+      "claimId": "claim-000003",
+      "code": "medicine-interaction-review",
+      "type": "interaction",
+      "text": "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000004-safety-1",
+      "claimId": "claim-000004",
+      "code": "allergy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000004-safety-2",
+      "claimId": "claim-000004",
+      "code": "medicine-interaction-review",
+      "type": "interaction",
+      "text": "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000005-safety-1",
+      "claimId": "claim-000005",
+      "code": "allergy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000005-safety-2",
+      "claimId": "claim-000005",
+      "code": "medicine-interaction-review",
+      "type": "interaction",
+      "text": "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000006-safety-1",
+      "claimId": "claim-000006",
+      "code": "pregnancy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000006-safety-2",
+      "claimId": "claim-000006",
+      "code": "medicine-interaction-review",
+      "type": "interaction",
+      "text": "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000007-safety-1",
+      "claimId": "claim-000007",
+      "code": "pregnancy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000007-safety-2",
+      "claimId": "claim-000007",
+      "code": "medicine-interaction-review",
+      "type": "interaction",
+      "text": "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000008-safety-1",
+      "claimId": "claim-000008",
+      "code": "pregnancy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000008-safety-2",
+      "claimId": "claim-000008",
+      "code": "medicine-interaction-review",
+      "type": "interaction",
+      "text": "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000009-safety-1",
+      "claimId": "claim-000009",
+      "code": "pregnancy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000009-safety-2",
+      "claimId": "claim-000009",
+      "code": "dose-review-required",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: dose review required. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000010-safety-1",
+      "claimId": "claim-000010",
+      "code": "pregnancy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000010-safety-2",
+      "claimId": "claim-000010",
+      "code": "dose-review-required",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: dose review required. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000011-safety-1",
+      "claimId": "claim-000011",
+      "code": "allergy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000012-safety-1",
+      "claimId": "claim-000012",
+      "code": "allergy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000013-safety-1",
+      "claimId": "claim-000013",
+      "code": "allergy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000014-safety-1",
+      "claimId": "claim-000014",
+      "code": "allergy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000015-safety-1",
+      "claimId": "claim-000015",
+      "code": "allergy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000016-safety-1",
+      "claimId": "claim-000016",
+      "code": "reflux-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: reflux caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000016-safety-2",
+      "claimId": "claim-000016",
+      "code": "child-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: child caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000017-safety-1",
+      "claimId": "claim-000017",
+      "code": "reflux-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: reflux caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000017-safety-2",
+      "claimId": "claim-000017",
+      "code": "child-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: child caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000018-safety-1",
+      "claimId": "claim-000018",
+      "code": "external-use-only",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: external use only. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000018-safety-2",
+      "claimId": "claim-000018",
+      "code": "patch-test",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: patch test. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000019-safety-1",
+      "claimId": "claim-000019",
+      "code": "external-use-only",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: external use only. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000019-safety-2",
+      "claimId": "claim-000019",
+      "code": "patch-test",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: patch test. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000020-safety-1",
+      "claimId": "claim-000020",
+      "code": "external-use-only",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: external use only. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000020-safety-2",
+      "claimId": "claim-000020",
+      "code": "pregnancy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000020-safety-3",
+      "claimId": "claim-000020",
+      "code": "child-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: child caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000021-safety-1",
+      "claimId": "claim-000021",
+      "code": "medicine-interaction-review",
+      "type": "interaction",
+      "text": "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000021-safety-2",
+      "claimId": "claim-000021",
+      "code": "allergy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000022-safety-1",
+      "claimId": "claim-000022",
+      "code": "medicine-interaction-review",
+      "type": "interaction",
+      "text": "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000022-safety-2",
+      "claimId": "claim-000022",
+      "code": "allergy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000023-safety-1",
+      "claimId": "claim-000023",
+      "code": "practitioner-supervision",
+      "type": "supervision-requirement",
+      "text": "PLACEHOLDER SAFETY FLAG: practitioner supervision. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000023-safety-2",
+      "claimId": "claim-000023",
+      "code": "pregnancy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000023-safety-3",
+      "claimId": "claim-000023",
+      "code": "medicine-interaction-review",
+      "type": "interaction",
+      "text": "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000024-safety-1",
+      "claimId": "claim-000024",
+      "code": "practitioner-supervision",
+      "type": "supervision-requirement",
+      "text": "PLACEHOLDER SAFETY FLAG: practitioner supervision. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000024-safety-2",
+      "claimId": "claim-000024",
+      "code": "pregnancy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000024-safety-3",
+      "claimId": "claim-000024",
+      "code": "medicine-interaction-review",
+      "type": "interaction",
+      "text": "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000025-safety-1",
+      "claimId": "claim-000025",
+      "code": "practitioner-supervision",
+      "type": "supervision-requirement",
+      "text": "PLACEHOLDER SAFETY FLAG: practitioner supervision. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000025-safety-2",
+      "claimId": "claim-000025",
+      "code": "pregnancy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000025-safety-3",
+      "claimId": "claim-000025",
+      "code": "thyroid-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: thyroid caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000025-safety-4",
+      "claimId": "claim-000025",
+      "code": "sedative-interaction",
+      "type": "interaction",
+      "text": "PLACEHOLDER SAFETY FLAG: sedative interaction. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000026-safety-1",
+      "claimId": "claim-000026",
+      "code": "practitioner-supervision",
+      "type": "supervision-requirement",
+      "text": "PLACEHOLDER SAFETY FLAG: practitioner supervision. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000026-safety-2",
+      "claimId": "claim-000026",
+      "code": "pregnancy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000026-safety-3",
+      "claimId": "claim-000026",
+      "code": "thyroid-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: thyroid caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000026-safety-4",
+      "claimId": "claim-000026",
+      "code": "sedative-interaction",
+      "type": "interaction",
+      "text": "PLACEHOLDER SAFETY FLAG: sedative interaction. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000027-safety-1",
+      "claimId": "claim-000027",
+      "code": "hypertension-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: hypertension caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000027-safety-2",
+      "claimId": "claim-000027",
+      "code": "pregnancy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000027-safety-3",
+      "claimId": "claim-000027",
+      "code": "medicine-interaction-review",
+      "type": "interaction",
+      "text": "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000028-safety-1",
+      "claimId": "claim-000028",
+      "code": "hypertension-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: hypertension caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000028-safety-2",
+      "claimId": "claim-000028",
+      "code": "pregnancy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000028-safety-3",
+      "claimId": "claim-000028",
+      "code": "medicine-interaction-review",
+      "type": "interaction",
+      "text": "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000029-safety-1",
+      "claimId": "claim-000029",
+      "code": "medicine-interaction-review",
+      "type": "interaction",
+      "text": "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000029-safety-2",
+      "claimId": "claim-000029",
+      "code": "liver-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: liver caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000030-safety-1",
+      "claimId": "claim-000030",
+      "code": "oral-burn-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: oral burn caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000030-safety-2",
+      "claimId": "claim-000030",
+      "code": "medicine-interaction-review",
+      "type": "interaction",
+      "text": "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000030-safety-3",
+      "claimId": "claim-000030",
+      "code": "child-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: child caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000031-safety-1",
+      "claimId": "claim-000031",
+      "code": "allergy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000032-safety-1",
+      "claimId": "claim-000032",
+      "code": "pregnancy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000032-safety-2",
+      "claimId": "claim-000032",
+      "code": "medicine-interaction-review",
+      "type": "interaction",
+      "text": "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000032-safety-3",
+      "claimId": "claim-000032",
+      "code": "allergy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000033-safety-1",
+      "claimId": "claim-000033",
+      "code": "bleeding-risk",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: bleeding risk. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000033-safety-2",
+      "claimId": "claim-000033",
+      "code": "surgery-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: surgery caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000033-safety-3",
+      "claimId": "claim-000033",
+      "code": "medicine-interaction-review",
+      "type": "interaction",
+      "text": "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000034-safety-1",
+      "claimId": "claim-000034",
+      "code": "infant-contraindication",
+      "type": "contraindication",
+      "text": "PLACEHOLDER SAFETY FLAG: infant contraindication. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000034-safety-2",
+      "claimId": "claim-000034",
+      "code": "diabetes-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: diabetes caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000034-safety-3",
+      "claimId": "claim-000034",
+      "code": "allergy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000035-safety-1",
+      "claimId": "claim-000035",
+      "code": "infant-contraindication",
+      "type": "contraindication",
+      "text": "PLACEHOLDER SAFETY FLAG: infant contraindication. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000035-safety-2",
+      "claimId": "claim-000035",
+      "code": "diabetes-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: diabetes caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000035-safety-3",
+      "claimId": "claim-000035",
+      "code": "allergy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000036-safety-1",
+      "claimId": "claim-000036",
+      "code": "dental-erosion-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: dental erosion caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000036-safety-2",
+      "claimId": "claim-000036",
+      "code": "reflux-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: reflux caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000037-safety-1",
+      "claimId": "claim-000037",
+      "code": "dental-erosion-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: dental erosion caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000037-safety-2",
+      "claimId": "claim-000037",
+      "code": "reflux-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: reflux caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000038-safety-1",
+      "claimId": "claim-000038",
+      "code": "do-not-swallow",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: do not swallow. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000038-safety-2",
+      "claimId": "claim-000038",
+      "code": "child-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: child caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000038-safety-3",
+      "claimId": "claim-000038",
+      "code": "sodium-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: sodium caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000039-safety-1",
+      "claimId": "claim-000039",
+      "code": "patch-test",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: patch test. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000039-safety-2",
+      "claimId": "claim-000039",
+      "code": "slip-hazard",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: slip hazard. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000040-safety-1",
+      "claimId": "claim-000040",
+      "code": "allergy-caution",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    },
+    {
+      "id": "claim-000040-safety-2",
+      "claimId": "claim-000040",
+      "code": "patch-test",
+      "type": "caution",
+      "text": "PLACEHOLDER SAFETY FLAG: patch test. Requires practitioner and safety review.",
+      "validationStatus": "unvalidated"
+    }
+  ],
+  "practitioners": [
+    {
+      "id": "pilot-practitioner-01",
+      "displayName": "Pilot Practitioner 1",
+      "fictional": true,
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "pilot-practitioner-02",
+      "displayName": "Pilot Practitioner 2",
+      "fictional": true,
+      "verificationStatus": "development-fixture"
+    },
+    {
+      "id": "pilot-practitioner-03",
+      "displayName": "Pilot Practitioner 3",
+      "fictional": true,
+      "verificationStatus": "development-fixture"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "contribution-000001",
+      "proposedEntityId": "claim-000001",
+      "contributorId": "pilot-practitioner-01",
+      "submittedAt": "2026-08-01T09:00:00Z",
+      "workflowStatus": "submitted",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000002",
+      "proposedEntityId": "claim-000002",
+      "contributorId": "pilot-practitioner-02",
+      "submittedAt": "2026-08-02T09:00:00Z",
+      "workflowStatus": "under-review",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000003",
+      "proposedEntityId": "claim-000003",
+      "contributorId": "pilot-practitioner-03",
+      "submittedAt": "2026-08-03T09:00:00Z",
+      "workflowStatus": "changes-requested",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000004",
+      "proposedEntityId": "claim-000004",
+      "contributorId": "pilot-practitioner-01",
+      "submittedAt": "2026-08-04T09:00:00Z",
+      "workflowStatus": "submitted",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000005",
+      "proposedEntityId": "claim-000005",
+      "contributorId": "pilot-practitioner-02",
+      "submittedAt": "2026-08-05T09:00:00Z",
+      "workflowStatus": "under-review",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000006",
+      "proposedEntityId": "claim-000006",
+      "contributorId": "pilot-practitioner-03",
+      "submittedAt": "2026-08-06T09:00:00Z",
+      "workflowStatus": "changes-requested",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000007",
+      "proposedEntityId": "claim-000007",
+      "contributorId": "pilot-practitioner-01",
+      "submittedAt": "2026-08-07T09:00:00Z",
+      "workflowStatus": "submitted",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000008",
+      "proposedEntityId": "claim-000008",
+      "contributorId": "pilot-practitioner-02",
+      "submittedAt": "2026-08-08T09:00:00Z",
+      "workflowStatus": "under-review",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000009",
+      "proposedEntityId": "claim-000009",
+      "contributorId": "pilot-practitioner-03",
+      "submittedAt": "2026-08-09T09:00:00Z",
+      "workflowStatus": "changes-requested",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000010",
+      "proposedEntityId": "claim-000010",
+      "contributorId": "pilot-practitioner-01",
+      "submittedAt": "2026-08-10T09:00:00Z",
+      "workflowStatus": "submitted",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000011",
+      "proposedEntityId": "claim-000011",
+      "contributorId": "pilot-practitioner-02",
+      "submittedAt": "2026-08-11T09:00:00Z",
+      "workflowStatus": "under-review",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000012",
+      "proposedEntityId": "claim-000012",
+      "contributorId": "pilot-practitioner-03",
+      "submittedAt": "2026-08-12T09:00:00Z",
+      "workflowStatus": "changes-requested",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000013",
+      "proposedEntityId": "claim-000013",
+      "contributorId": "pilot-practitioner-01",
+      "submittedAt": "2026-08-13T09:00:00Z",
+      "workflowStatus": "submitted",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000014",
+      "proposedEntityId": "claim-000014",
+      "contributorId": "pilot-practitioner-02",
+      "submittedAt": "2026-08-14T09:00:00Z",
+      "workflowStatus": "under-review",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000015",
+      "proposedEntityId": "claim-000015",
+      "contributorId": "pilot-practitioner-03",
+      "submittedAt": "2026-08-15T09:00:00Z",
+      "workflowStatus": "changes-requested",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000016",
+      "proposedEntityId": "claim-000016",
+      "contributorId": "pilot-practitioner-01",
+      "submittedAt": "2026-08-16T09:00:00Z",
+      "workflowStatus": "submitted",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000017",
+      "proposedEntityId": "claim-000017",
+      "contributorId": "pilot-practitioner-02",
+      "submittedAt": "2026-08-17T09:00:00Z",
+      "workflowStatus": "under-review",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000018",
+      "proposedEntityId": "claim-000018",
+      "contributorId": "pilot-practitioner-03",
+      "submittedAt": "2026-08-18T09:00:00Z",
+      "workflowStatus": "changes-requested",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000019",
+      "proposedEntityId": "claim-000019",
+      "contributorId": "pilot-practitioner-01",
+      "submittedAt": "2026-08-19T09:00:00Z",
+      "workflowStatus": "submitted",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000020",
+      "proposedEntityId": "claim-000020",
+      "contributorId": "pilot-practitioner-02",
+      "submittedAt": "2026-08-20T09:00:00Z",
+      "workflowStatus": "under-review",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000021",
+      "proposedEntityId": "claim-000021",
+      "contributorId": "pilot-practitioner-03",
+      "submittedAt": "2026-08-01T09:00:00Z",
+      "workflowStatus": "changes-requested",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000022",
+      "proposedEntityId": "claim-000022",
+      "contributorId": "pilot-practitioner-01",
+      "submittedAt": "2026-08-02T09:00:00Z",
+      "workflowStatus": "submitted",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000023",
+      "proposedEntityId": "claim-000023",
+      "contributorId": "pilot-practitioner-02",
+      "submittedAt": "2026-08-03T09:00:00Z",
+      "workflowStatus": "under-review",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000024",
+      "proposedEntityId": "claim-000024",
+      "contributorId": "pilot-practitioner-03",
+      "submittedAt": "2026-08-04T09:00:00Z",
+      "workflowStatus": "changes-requested",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000025",
+      "proposedEntityId": "claim-000025",
+      "contributorId": "pilot-practitioner-01",
+      "submittedAt": "2026-08-05T09:00:00Z",
+      "workflowStatus": "submitted",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000026",
+      "proposedEntityId": "claim-000026",
+      "contributorId": "pilot-practitioner-02",
+      "submittedAt": "2026-08-06T09:00:00Z",
+      "workflowStatus": "under-review",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000027",
+      "proposedEntityId": "claim-000027",
+      "contributorId": "pilot-practitioner-03",
+      "submittedAt": "2026-08-07T09:00:00Z",
+      "workflowStatus": "changes-requested",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000028",
+      "proposedEntityId": "claim-000028",
+      "contributorId": "pilot-practitioner-01",
+      "submittedAt": "2026-08-08T09:00:00Z",
+      "workflowStatus": "submitted",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000029",
+      "proposedEntityId": "claim-000029",
+      "contributorId": "pilot-practitioner-02",
+      "submittedAt": "2026-08-09T09:00:00Z",
+      "workflowStatus": "under-review",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000030",
+      "proposedEntityId": "claim-000030",
+      "contributorId": "pilot-practitioner-03",
+      "submittedAt": "2026-08-10T09:00:00Z",
+      "workflowStatus": "changes-requested",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000031",
+      "proposedEntityId": "claim-000031",
+      "contributorId": "pilot-practitioner-01",
+      "submittedAt": "2026-08-11T09:00:00Z",
+      "workflowStatus": "submitted",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000032",
+      "proposedEntityId": "claim-000032",
+      "contributorId": "pilot-practitioner-02",
+      "submittedAt": "2026-08-12T09:00:00Z",
+      "workflowStatus": "under-review",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000033",
+      "proposedEntityId": "claim-000033",
+      "contributorId": "pilot-practitioner-03",
+      "submittedAt": "2026-08-13T09:00:00Z",
+      "workflowStatus": "changes-requested",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000034",
+      "proposedEntityId": "claim-000034",
+      "contributorId": "pilot-practitioner-01",
+      "submittedAt": "2026-08-14T09:00:00Z",
+      "workflowStatus": "submitted",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000035",
+      "proposedEntityId": "claim-000035",
+      "contributorId": "pilot-practitioner-02",
+      "submittedAt": "2026-08-15T09:00:00Z",
+      "workflowStatus": "under-review",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000036",
+      "proposedEntityId": "claim-000036",
+      "contributorId": "pilot-practitioner-03",
+      "submittedAt": "2026-08-16T09:00:00Z",
+      "workflowStatus": "changes-requested",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000037",
+      "proposedEntityId": "claim-000037",
+      "contributorId": "pilot-practitioner-01",
+      "submittedAt": "2026-08-17T09:00:00Z",
+      "workflowStatus": "submitted",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000038",
+      "proposedEntityId": "claim-000038",
+      "contributorId": "pilot-practitioner-02",
+      "submittedAt": "2026-08-18T09:00:00Z",
+      "workflowStatus": "under-review",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000039",
+      "proposedEntityId": "claim-000039",
+      "contributorId": "pilot-practitioner-03",
+      "submittedAt": "2026-08-19T09:00:00Z",
+      "workflowStatus": "changes-requested",
+      "datasetPurpose": "application-development-only"
+    },
+    {
+      "id": "contribution-000040",
+      "proposedEntityId": "claim-000040",
+      "contributorId": "pilot-practitioner-01",
+      "submittedAt": "2026-08-20T09:00:00Z",
+      "workflowStatus": "submitted",
+      "datasetPurpose": "application-development-only"
+    }
+  ]
+}

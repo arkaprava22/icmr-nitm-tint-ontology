@@ -1,0 +1,1742 @@
+@prefix tint: <https://w3id.org/tint/ontology/> .
+@prefix data: <https://w3id.org/tint/data/pilot/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# UNVALIDATED DEVELOPMENT DATA. NEVER LOAD INTO THE PUBLIC GRAPH.
+
+data:nausea a tint:Symptom ; skos:prefLabel "Nausea"@en, "मतली"@hi .
+
+data:throat-discomfort a tint:Symptom ; skos:prefLabel "Throat discomfort"@en, "गले में परेशानी"@hi .
+
+data:cough a tint:Symptom ; skos:prefLabel "Cough"@en, "खांसी"@hi .
+
+data:nasal-congestion a tint:Symptom ; skos:prefLabel "Nasal congestion"@en, "नाक बंद होना"@hi .
+
+data:indigestion a tint:Symptom ; skos:prefLabel "Indigestion"@en, "अपच"@hi .
+
+data:bloating a tint:Symptom ; skos:prefLabel "Bloating"@en, "पेट फूलना"@hi .
+
+data:digestive-discomfort a tint:Symptom ; skos:prefLabel "Digestive discomfort"@en, "पाचन संबंधी परेशानी"@hi .
+
+data:minor-skin-irritation a tint:Symptom ; skos:prefLabel "Minor skin irritation"@en, "त्वचा की हल्की जलन"@hi .
+
+data:skin-hygiene-concern a tint:HealthCondition ; skos:prefLabel "Skin hygiene concern"@en, "त्वचा की स्वच्छता संबंधी चिंता"@hi .
+
+data:reduced-appetite a tint:Symptom ; skos:prefLabel "Reduced appetite"@en, "भूख कम लगना"@hi .
+
+data:constipation a tint:HealthCondition ; skos:prefLabel "Constipation"@en, "कब्ज"@hi .
+
+data:stress a tint:Symptom ; skos:prefLabel "Stress"@en, "तनाव"@hi .
+
+data:fatigue a tint:Symptom ; skos:prefLabel "Fatigue"@en, "थकान"@hi .
+
+data:oral-discomfort a tint:Symptom ; skos:prefLabel "Oral discomfort"@en, "मुंह में परेशानी"@hi .
+
+data:common-cold-discomfort a tint:Symptom ; skos:prefLabel "Common-cold discomfort"@en, "सर्दी की परेशानी"@hi .
+
+data:dry-skin a tint:Symptom ; skos:prefLabel "Dry skin"@en, "शुष्क त्वचा"@hi .
+
+data:muscle-discomfort a tint:Symptom ; skos:prefLabel "Muscle discomfort"@en, "मांसपेशियों में परेशानी"@hi .
+
+data:joint-discomfort a tint:Symptom ; skos:prefLabel "Joint discomfort"@en, "जोड़ों में परेशानी"@hi .
+
+data:remedy-0001 a tint:Remedy ;
+    skos:prefLabel "Ginger infusion"@en, "अदरक का काढ़ा"@hi ;
+    skos:altLabel "adrak tea"@en ;
+    skos:altLabel "ginger tea"@en ;
+    tint:botanicalName "Zingiber officinale" ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:riskLevel "moderate" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0002 a tint:Remedy ;
+    skos:prefLabel "Turmeric milk"@en, "हल्दी वाला दूध"@hi ;
+    skos:altLabel "haldi doodh"@en ;
+    skos:altLabel "golden milk"@en ;
+    tint:botanicalName "Curcuma longa" ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:riskLevel "moderate" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0003 a tint:Remedy ;
+    skos:prefLabel "Tulsi leaf infusion"@en, "तुलसी पत्ती का काढ़ा"@hi ;
+    skos:altLabel "holy basil tea"@en ;
+    skos:altLabel "tulasi infusion"@en ;
+    tint:botanicalName "Ocimum tenuiflorum" ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:riskLevel "moderate" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0004 a tint:Remedy ;
+    skos:prefLabel "Ajwain water"@en, "अजवाइन का पानी"@hi ;
+    skos:altLabel "carom water"@en ;
+    skos:altLabel "ajowan water"@en ;
+    tint:botanicalName "Trachyspermum ammi" ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:riskLevel "moderate" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0005 a tint:Remedy ;
+    skos:prefLabel "Fennel seed infusion"@en, "सौंफ का पानी"@hi ;
+    skos:altLabel "saunf water"@en ;
+    skos:altLabel "fennel tea"@en ;
+    tint:botanicalName "Foeniculum vulgare" ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:riskLevel "low" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0006 a tint:Remedy ;
+    skos:prefLabel "Cumin water"@en, "जीरे का पानी"@hi ;
+    skos:altLabel "jeera water"@en ;
+    tint:botanicalName "Cuminum cyminum" ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:riskLevel "low" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0007 a tint:Remedy ;
+    skos:prefLabel "Coriander seed water"@en, "धनिया का पानी"@hi ;
+    skos:altLabel "dhania water"@en ;
+    tint:botanicalName "Coriandrum sativum" ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:riskLevel "low" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0008 a tint:Remedy ;
+    skos:prefLabel "Mint leaf infusion"@en, "पुदीना पत्ती का काढ़ा"@hi ;
+    skos:altLabel "pudina tea"@en ;
+    skos:altLabel "mint tea"@en ;
+    tint:botanicalName "Mentha spicata" ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:riskLevel "moderate" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0009 a tint:Remedy ;
+    skos:prefLabel "Aloe vera gel"@en, "घृतकुमारी जेल"@hi ;
+    skos:altLabel "aloe gel"@en ;
+    skos:altLabel "gheekumari gel"@en ;
+    tint:botanicalName "Aloe vera" ;
+    tint:belongsToSystem tint:naturopathy ;
+    tint:riskLevel "moderate" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0010 a tint:Remedy ;
+    skos:prefLabel "Neem leaf wash"@en, "नीम पत्ती का धोवन"@hi ;
+    skos:altLabel "neem rinse"@en ;
+    tint:botanicalName "Azadirachta indica" ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:riskLevel "high" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0011 a tint:Remedy ;
+    skos:prefLabel "Amla preparation"@en, "आंवला तैयारी"@hi ;
+    skos:altLabel "amalaki preparation"@en ;
+    skos:altLabel "Indian gooseberry preparation"@en ;
+    tint:botanicalName "Phyllanthus emblica" ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:riskLevel "moderate" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0012 a tint:Remedy ;
+    skos:prefLabel "Triphala preparation"@en, "त्रिफला तैयारी"@hi ;
+    skos:altLabel "triphala"@en ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:riskLevel "high" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0013 a tint:Remedy ;
+    skos:prefLabel "Ashwagandha preparation"@en, "अश्वगंधा तैयारी"@hi ;
+    skos:altLabel "Indian ginseng preparation"@en ;
+    tint:botanicalName "Withania somnifera" ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:riskLevel "high" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0014 a tint:Remedy ;
+    skos:prefLabel "Liquorice root infusion"@en, "मुलेठी का काढ़ा"@hi ;
+    skos:altLabel "mulethi tea"@en ;
+    skos:altLabel "licorice root tea"@en ;
+    tint:botanicalName "Glycyrrhiza glabra" ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:riskLevel "high" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0015 a tint:Remedy ;
+    skos:prefLabel "Cinnamon infusion"@en, "दालचीनी का काढ़ा"@hi ;
+    skos:altLabel "dalchini tea"@en ;
+    tint:botanicalName "Cinnamomum verum" ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:riskLevel "moderate" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0016 a tint:Remedy ;
+    skos:prefLabel "Clove preparation"@en, "लौंग की तैयारी"@hi ;
+    skos:altLabel "laung preparation"@en ;
+    tint:botanicalName "Syzygium aromaticum" ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:riskLevel "high" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0017 a tint:Remedy ;
+    skos:prefLabel "Cardamom infusion"@en, "इलायची का काढ़ा"@hi ;
+    skos:altLabel "elaichi tea"@en ;
+    tint:botanicalName "Elettaria cardamomum" ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:riskLevel "low" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0018 a tint:Remedy ;
+    skos:prefLabel "Fenugreek seed preparation"@en, "मेथी दाना तैयारी"@hi ;
+    skos:altLabel "methi seed preparation"@en ;
+    tint:botanicalName "Trigonella foenum-graecum" ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:riskLevel "high" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0019 a tint:Remedy ;
+    skos:prefLabel "Garlic preparation"@en, "लहसुन की तैयारी"@hi ;
+    skos:altLabel "lahsun preparation"@en ;
+    tint:botanicalName "Allium sativum" ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:riskLevel "high" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0020 a tint:Remedy ;
+    skos:prefLabel "Honey in warm water"@en, "गुनगुने पानी में शहद"@hi ;
+    skos:altLabel "warm honey water"@en ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:riskLevel "high" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0021 a tint:Remedy ;
+    skos:prefLabel "Lemon water"@en, "नींबू पानी"@hi ;
+    skos:altLabel "nimbu pani"@en ;
+    tint:botanicalName "Citrus limon" ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:riskLevel "low" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0022 a tint:Remedy ;
+    skos:prefLabel "Warm saline gargle"@en, "गुनगुने नमक पानी के गरारे"@hi ;
+    skos:altLabel "salt-water gargle"@en ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:riskLevel "moderate" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0023 a tint:Remedy ;
+    skos:prefLabel "Coconut oil application"@en, "नारियल तेल का प्रयोग"@hi ;
+    skos:altLabel "coconut oil rub"@en ;
+    tint:botanicalName "Cocos nucifera" ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:riskLevel "low" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0024 a tint:Remedy ;
+    skos:prefLabel "Sesame oil application"@en, "तिल तेल का प्रयोग"@hi ;
+    skos:altLabel "til oil massage"@en ;
+    skos:altLabel "sesame oil massage"@en ;
+    tint:botanicalName "Sesamum indicum" ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:riskLevel "moderate" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:remedy-0025 a tint:Remedy ;
+    skos:prefLabel "Psyllium husk in water"@en, "इसबगोल पानी में"@hi ;
+    skos:altLabel "isabgol water"@en ;
+    skos:altLabel "ispaghula husk"@en ;
+    tint:botanicalName "Plantago ovata" ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:riskLevel "high" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "Unvalidated pilot record for application development."@en .
+
+data:claim-000001 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Ginger infusion for nausea"@en, "मतली के लिए अदरक का काढ़ा का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0001 ;
+    tint:hasTarget data:nausea ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000001 ;
+    tint:hasSafetyStatement data:claim-000001-safety-1 ;
+    tint:hasSafetyStatement data:claim-000001-safety-2 ;
+    tint:publicationStatus tint:statusSubmitted ;
+    tint:riskLevel "moderate" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000002 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Ginger infusion for throat discomfort"@en, "गले में परेशानी के लिए अदरक का काढ़ा का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0001 ;
+    tint:hasTarget data:throat-discomfort ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000002 ;
+    tint:hasSafetyStatement data:claim-000002-safety-1 ;
+    tint:hasSafetyStatement data:claim-000002-safety-2 ;
+    tint:publicationStatus tint:statusUnderReview ;
+    tint:riskLevel "moderate" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000003 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Ginger infusion for indigestion"@en, "अपच के लिए अदरक का काढ़ा का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0001 ;
+    tint:hasTarget data:indigestion ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000003 ;
+    tint:hasSafetyStatement data:claim-000003-safety-1 ;
+    tint:hasSafetyStatement data:claim-000003-safety-2 ;
+    tint:publicationStatus tint:statusChangesRequested ;
+    tint:riskLevel "moderate" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000004 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Turmeric milk for throat discomfort"@en, "गले में परेशानी के लिए हल्दी वाला दूध का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0002 ;
+    tint:hasTarget data:throat-discomfort ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000004 ;
+    tint:hasSafetyStatement data:claim-000004-safety-1 ;
+    tint:hasSafetyStatement data:claim-000004-safety-2 ;
+    tint:publicationStatus tint:statusSubmitted ;
+    tint:riskLevel "moderate" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000005 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Turmeric milk for joint discomfort"@en, "जोड़ों में परेशानी के लिए हल्दी वाला दूध का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0002 ;
+    tint:hasTarget data:joint-discomfort ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000005 ;
+    tint:hasSafetyStatement data:claim-000005-safety-1 ;
+    tint:hasSafetyStatement data:claim-000005-safety-2 ;
+    tint:publicationStatus tint:statusUnderReview ;
+    tint:riskLevel "moderate" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000006 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Tulsi leaf infusion for cough"@en, "खांसी के लिए तुलसी पत्ती का काढ़ा का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0003 ;
+    tint:hasTarget data:cough ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000006 ;
+    tint:hasSafetyStatement data:claim-000006-safety-1 ;
+    tint:hasSafetyStatement data:claim-000006-safety-2 ;
+    tint:publicationStatus tint:statusChangesRequested ;
+    tint:riskLevel "moderate" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000007 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Tulsi leaf infusion for nasal congestion"@en, "नाक बंद होना के लिए तुलसी पत्ती का काढ़ा का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0003 ;
+    tint:hasTarget data:nasal-congestion ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000007 ;
+    tint:hasSafetyStatement data:claim-000007-safety-1 ;
+    tint:hasSafetyStatement data:claim-000007-safety-2 ;
+    tint:publicationStatus tint:statusSubmitted ;
+    tint:riskLevel "moderate" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000008 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Tulsi leaf infusion for throat discomfort"@en, "गले में परेशानी के लिए तुलसी पत्ती का काढ़ा का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0003 ;
+    tint:hasTarget data:throat-discomfort ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000008 ;
+    tint:hasSafetyStatement data:claim-000008-safety-1 ;
+    tint:hasSafetyStatement data:claim-000008-safety-2 ;
+    tint:publicationStatus tint:statusUnderReview ;
+    tint:riskLevel "moderate" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000009 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Ajwain water for indigestion"@en, "अपच के लिए अजवाइन का पानी का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0004 ;
+    tint:hasTarget data:indigestion ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000009 ;
+    tint:hasSafetyStatement data:claim-000009-safety-1 ;
+    tint:hasSafetyStatement data:claim-000009-safety-2 ;
+    tint:publicationStatus tint:statusChangesRequested ;
+    tint:riskLevel "moderate" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000010 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Ajwain water for bloating"@en, "पेट फूलना के लिए अजवाइन का पानी का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0004 ;
+    tint:hasTarget data:bloating ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000010 ;
+    tint:hasSafetyStatement data:claim-000010-safety-1 ;
+    tint:hasSafetyStatement data:claim-000010-safety-2 ;
+    tint:publicationStatus tint:statusSubmitted ;
+    tint:riskLevel "moderate" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000011 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Fennel seed infusion for bloating"@en, "पेट फूलना के लिए सौंफ का पानी का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0005 ;
+    tint:hasTarget data:bloating ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000011 ;
+    tint:hasSafetyStatement data:claim-000011-safety-1 ;
+    tint:publicationStatus tint:statusUnderReview ;
+    tint:riskLevel "low" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000012 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Fennel seed infusion for digestive discomfort"@en, "पाचन संबंधी परेशानी के लिए सौंफ का पानी का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0005 ;
+    tint:hasTarget data:digestive-discomfort ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000012 ;
+    tint:hasSafetyStatement data:claim-000012-safety-1 ;
+    tint:publicationStatus tint:statusChangesRequested ;
+    tint:riskLevel "low" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000013 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Cumin water for digestive discomfort"@en, "पाचन संबंधी परेशानी के लिए जीरे का पानी का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0006 ;
+    tint:hasTarget data:digestive-discomfort ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000013 ;
+    tint:hasSafetyStatement data:claim-000013-safety-1 ;
+    tint:publicationStatus tint:statusSubmitted ;
+    tint:riskLevel "low" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000014 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Cumin water for bloating"@en, "पेट फूलना के लिए जीरे का पानी का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0006 ;
+    tint:hasTarget data:bloating ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000014 ;
+    tint:hasSafetyStatement data:claim-000014-safety-1 ;
+    tint:publicationStatus tint:statusUnderReview ;
+    tint:riskLevel "low" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000015 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Coriander seed water for digestive discomfort"@en, "पाचन संबंधी परेशानी के लिए धनिया का पानी का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0007 ;
+    tint:hasTarget data:digestive-discomfort ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000015 ;
+    tint:hasSafetyStatement data:claim-000015-safety-1 ;
+    tint:publicationStatus tint:statusChangesRequested ;
+    tint:riskLevel "low" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000016 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Mint leaf infusion for indigestion"@en, "अपच के लिए पुदीना पत्ती का काढ़ा का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0008 ;
+    tint:hasTarget data:indigestion ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000016 ;
+    tint:hasSafetyStatement data:claim-000016-safety-1 ;
+    tint:hasSafetyStatement data:claim-000016-safety-2 ;
+    tint:publicationStatus tint:statusSubmitted ;
+    tint:riskLevel "moderate" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000017 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Mint leaf infusion for nausea"@en, "मतली के लिए पुदीना पत्ती का काढ़ा का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0008 ;
+    tint:hasTarget data:nausea ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000017 ;
+    tint:hasSafetyStatement data:claim-000017-safety-1 ;
+    tint:hasSafetyStatement data:claim-000017-safety-2 ;
+    tint:publicationStatus tint:statusUnderReview ;
+    tint:riskLevel "moderate" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000018 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Aloe vera gel for minor skin irritation"@en, "त्वचा की हल्की जलन के लिए घृतकुमारी जेल का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0009 ;
+    tint:hasTarget data:minor-skin-irritation ;
+    tint:belongsToSystem tint:naturopathy ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000018 ;
+    tint:hasSafetyStatement data:claim-000018-safety-1 ;
+    tint:hasSafetyStatement data:claim-000018-safety-2 ;
+    tint:publicationStatus tint:statusChangesRequested ;
+    tint:riskLevel "moderate" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000019 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Aloe vera gel for dry skin"@en, "शुष्क त्वचा के लिए घृतकुमारी जेल का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0009 ;
+    tint:hasTarget data:dry-skin ;
+    tint:belongsToSystem tint:naturopathy ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000019 ;
+    tint:hasSafetyStatement data:claim-000019-safety-1 ;
+    tint:hasSafetyStatement data:claim-000019-safety-2 ;
+    tint:publicationStatus tint:statusSubmitted ;
+    tint:riskLevel "moderate" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000020 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Neem leaf wash for skin hygiene concern"@en, "त्वचा की स्वच्छता संबंधी चिंता के लिए नीम पत्ती का धोवन का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0010 ;
+    tint:hasTarget data:skin-hygiene-concern ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:hasOutcome data:support-hygiene ;
+    tint:appliesToPopulation data:adult-supervised ;
+    tint:supportedBy data:evidence-000020 ;
+    tint:hasSafetyStatement data:claim-000020-safety-1 ;
+    tint:hasSafetyStatement data:claim-000020-safety-2 ;
+    tint:hasSafetyStatement data:claim-000020-safety-3 ;
+    tint:publicationStatus tint:statusUnderReview ;
+    tint:riskLevel "high" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000021 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Amla preparation for reduced appetite"@en, "भूख कम लगना के लिए आंवला तैयारी का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0011 ;
+    tint:hasTarget data:reduced-appetite ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000021 ;
+    tint:hasSafetyStatement data:claim-000021-safety-1 ;
+    tint:hasSafetyStatement data:claim-000021-safety-2 ;
+    tint:publicationStatus tint:statusChangesRequested ;
+    tint:riskLevel "moderate" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000022 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Amla preparation for fatigue"@en, "थकान के लिए आंवला तैयारी का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0011 ;
+    tint:hasTarget data:fatigue ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000022 ;
+    tint:hasSafetyStatement data:claim-000022-safety-1 ;
+    tint:hasSafetyStatement data:claim-000022-safety-2 ;
+    tint:publicationStatus tint:statusSubmitted ;
+    tint:riskLevel "moderate" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000023 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Triphala preparation for constipation"@en, "कब्ज के लिए त्रिफला तैयारी का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0012 ;
+    tint:hasTarget data:constipation ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-supervised ;
+    tint:supportedBy data:evidence-000023 ;
+    tint:hasSafetyStatement data:claim-000023-safety-1 ;
+    tint:hasSafetyStatement data:claim-000023-safety-2 ;
+    tint:hasSafetyStatement data:claim-000023-safety-3 ;
+    tint:publicationStatus tint:statusUnderReview ;
+    tint:riskLevel "high" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000024 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Triphala preparation for digestive discomfort"@en, "पाचन संबंधी परेशानी के लिए त्रिफला तैयारी का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0012 ;
+    tint:hasTarget data:digestive-discomfort ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-supervised ;
+    tint:supportedBy data:evidence-000024 ;
+    tint:hasSafetyStatement data:claim-000024-safety-1 ;
+    tint:hasSafetyStatement data:claim-000024-safety-2 ;
+    tint:hasSafetyStatement data:claim-000024-safety-3 ;
+    tint:publicationStatus tint:statusChangesRequested ;
+    tint:riskLevel "high" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000025 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Ashwagandha preparation for stress"@en, "तनाव के लिए अश्वगंधा तैयारी का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0013 ;
+    tint:hasTarget data:stress ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-supervised ;
+    tint:supportedBy data:evidence-000025 ;
+    tint:hasSafetyStatement data:claim-000025-safety-1 ;
+    tint:hasSafetyStatement data:claim-000025-safety-2 ;
+    tint:hasSafetyStatement data:claim-000025-safety-3 ;
+    tint:hasSafetyStatement data:claim-000025-safety-4 ;
+    tint:publicationStatus tint:statusSubmitted ;
+    tint:riskLevel "high" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000026 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Ashwagandha preparation for fatigue"@en, "थकान के लिए अश्वगंधा तैयारी का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0013 ;
+    tint:hasTarget data:fatigue ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-supervised ;
+    tint:supportedBy data:evidence-000026 ;
+    tint:hasSafetyStatement data:claim-000026-safety-1 ;
+    tint:hasSafetyStatement data:claim-000026-safety-2 ;
+    tint:hasSafetyStatement data:claim-000026-safety-3 ;
+    tint:hasSafetyStatement data:claim-000026-safety-4 ;
+    tint:publicationStatus tint:statusUnderReview ;
+    tint:riskLevel "high" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000027 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Liquorice root infusion for throat discomfort"@en, "गले में परेशानी के लिए मुलेठी का काढ़ा का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0014 ;
+    tint:hasTarget data:throat-discomfort ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-supervised ;
+    tint:supportedBy data:evidence-000027 ;
+    tint:hasSafetyStatement data:claim-000027-safety-1 ;
+    tint:hasSafetyStatement data:claim-000027-safety-2 ;
+    tint:hasSafetyStatement data:claim-000027-safety-3 ;
+    tint:publicationStatus tint:statusChangesRequested ;
+    tint:riskLevel "high" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000028 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Liquorice root infusion for cough"@en, "खांसी के लिए मुलेठी का काढ़ा का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0014 ;
+    tint:hasTarget data:cough ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-supervised ;
+    tint:supportedBy data:evidence-000028 ;
+    tint:hasSafetyStatement data:claim-000028-safety-1 ;
+    tint:hasSafetyStatement data:claim-000028-safety-2 ;
+    tint:hasSafetyStatement data:claim-000028-safety-3 ;
+    tint:publicationStatus tint:statusSubmitted ;
+    tint:riskLevel "high" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000029 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Cinnamon infusion for digestive discomfort"@en, "पाचन संबंधी परेशानी के लिए दालचीनी का काढ़ा का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0015 ;
+    tint:hasTarget data:digestive-discomfort ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000029 ;
+    tint:hasSafetyStatement data:claim-000029-safety-1 ;
+    tint:hasSafetyStatement data:claim-000029-safety-2 ;
+    tint:publicationStatus tint:statusUnderReview ;
+    tint:riskLevel "moderate" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000030 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Clove preparation for oral discomfort"@en, "मुंह में परेशानी के लिए लौंग की तैयारी का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0016 ;
+    tint:hasTarget data:oral-discomfort ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-supervised ;
+    tint:supportedBy data:evidence-000030 ;
+    tint:hasSafetyStatement data:claim-000030-safety-1 ;
+    tint:hasSafetyStatement data:claim-000030-safety-2 ;
+    tint:hasSafetyStatement data:claim-000030-safety-3 ;
+    tint:publicationStatus tint:statusChangesRequested ;
+    tint:riskLevel "high" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000031 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Cardamom infusion for digestive discomfort"@en, "पाचन संबंधी परेशानी के लिए इलायची का काढ़ा का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0017 ;
+    tint:hasTarget data:digestive-discomfort ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000031 ;
+    tint:hasSafetyStatement data:claim-000031-safety-1 ;
+    tint:publicationStatus tint:statusSubmitted ;
+    tint:riskLevel "low" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000032 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Fenugreek seed preparation for digestive discomfort"@en, "पाचन संबंधी परेशानी के लिए मेथी दाना तैयारी का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0018 ;
+    tint:hasTarget data:digestive-discomfort ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-supervised ;
+    tint:supportedBy data:evidence-000032 ;
+    tint:hasSafetyStatement data:claim-000032-safety-1 ;
+    tint:hasSafetyStatement data:claim-000032-safety-2 ;
+    tint:hasSafetyStatement data:claim-000032-safety-3 ;
+    tint:publicationStatus tint:statusUnderReview ;
+    tint:riskLevel "high" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000033 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Garlic preparation for common-cold discomfort"@en, "सर्दी की परेशानी के लिए लहसुन की तैयारी का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0019 ;
+    tint:hasTarget data:common-cold-discomfort ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-supervised ;
+    tint:supportedBy data:evidence-000033 ;
+    tint:hasSafetyStatement data:claim-000033-safety-1 ;
+    tint:hasSafetyStatement data:claim-000033-safety-2 ;
+    tint:hasSafetyStatement data:claim-000033-safety-3 ;
+    tint:publicationStatus tint:statusChangesRequested ;
+    tint:riskLevel "high" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000034 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Honey in warm water for cough"@en, "खांसी के लिए गुनगुने पानी में शहद का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0020 ;
+    tint:hasTarget data:cough ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-supervised ;
+    tint:supportedBy data:evidence-000034 ;
+    tint:hasSafetyStatement data:claim-000034-safety-1 ;
+    tint:hasSafetyStatement data:claim-000034-safety-2 ;
+    tint:hasSafetyStatement data:claim-000034-safety-3 ;
+    tint:publicationStatus tint:statusSubmitted ;
+    tint:riskLevel "high" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000035 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Honey in warm water for throat discomfort"@en, "गले में परेशानी के लिए गुनगुने पानी में शहद का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0020 ;
+    tint:hasTarget data:throat-discomfort ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-supervised ;
+    tint:supportedBy data:evidence-000035 ;
+    tint:hasSafetyStatement data:claim-000035-safety-1 ;
+    tint:hasSafetyStatement data:claim-000035-safety-2 ;
+    tint:hasSafetyStatement data:claim-000035-safety-3 ;
+    tint:publicationStatus tint:statusUnderReview ;
+    tint:riskLevel "high" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000036 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Lemon water for nausea"@en, "मतली के लिए नींबू पानी का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0021 ;
+    tint:hasTarget data:nausea ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000036 ;
+    tint:hasSafetyStatement data:claim-000036-safety-1 ;
+    tint:hasSafetyStatement data:claim-000036-safety-2 ;
+    tint:publicationStatus tint:statusChangesRequested ;
+    tint:riskLevel "low" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000037 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Lemon water for throat discomfort"@en, "गले में परेशानी के लिए नींबू पानी का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0021 ;
+    tint:hasTarget data:throat-discomfort ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000037 ;
+    tint:hasSafetyStatement data:claim-000037-safety-1 ;
+    tint:hasSafetyStatement data:claim-000037-safety-2 ;
+    tint:publicationStatus tint:statusSubmitted ;
+    tint:riskLevel "low" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000038 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Warm saline gargle for throat discomfort"@en, "गले में परेशानी के लिए गुनगुने नमक पानी के गरारे का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0022 ;
+    tint:hasTarget data:throat-discomfort ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000038 ;
+    tint:hasSafetyStatement data:claim-000038-safety-1 ;
+    tint:hasSafetyStatement data:claim-000038-safety-2 ;
+    tint:hasSafetyStatement data:claim-000038-safety-3 ;
+    tint:publicationStatus tint:statusUnderReview ;
+    tint:riskLevel "moderate" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000039 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Coconut oil application for dry skin"@en, "शुष्क त्वचा के लिए नारियल तेल का प्रयोग का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0023 ;
+    tint:hasTarget data:dry-skin ;
+    tint:belongsToSystem tint:homeRemedyTradition ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000039 ;
+    tint:hasSafetyStatement data:claim-000039-safety-1 ;
+    tint:hasSafetyStatement data:claim-000039-safety-2 ;
+    tint:publicationStatus tint:statusChangesRequested ;
+    tint:riskLevel "low" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:claim-000040 a tint:HealthUseClaim ;
+    skos:prefLabel "Proposed traditional use of Sesame oil application for muscle discomfort"@en, "मांसपेशियों में परेशानी के लिए तिल तेल का प्रयोग का प्रस्तावित पारंपरिक उपयोग"@hi ;
+    tint:claimsUseOf data:remedy-0024 ;
+    tint:hasTarget data:muscle-discomfort ;
+    tint:belongsToSystem tint:ayurveda ;
+    tint:hasOutcome data:relief ;
+    tint:appliesToPopulation data:adult-general ;
+    tint:supportedBy data:evidence-000040 ;
+    tint:hasSafetyStatement data:claim-000040-safety-1 ;
+    tint:hasSafetyStatement data:claim-000040-safety-2 ;
+    tint:publicationStatus tint:statusSubmitted ;
+    tint:riskLevel "moderate" ;
+    tint:assessmentNote "UNVALIDATED: not permitted for public display."@en .
+
+data:relief a tint:IntendedOutcome ; skos:prefLabel "Relief"@en, "राहत"@hi .
+
+data:support-hygiene a tint:IntendedOutcome ; skos:prefLabel "Support hygiene"@en, "स्वच्छता में सहायता"@hi .
+
+data:adults a tint:PopulationGroup ; skos:prefLabel "Adults"@en, "वयस्क"@hi .
+
+data:adult-general a tint:PopulationGroup ; skos:prefLabel "General adult population"@en, "सामान्य वयस्क जनसंख्या"@hi .
+
+data:adult-supervised a tint:PopulationGroup ; skos:prefLabel "Adults under practitioner supervision"@en, "चिकित्सक की देखरेख में वयस्क"@hi .
+
+data:evidence-000001 a tint:EvidenceItem ;
+    tint:evidenceType "traditional-use-placeholder" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000002 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000003 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000004 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000005 a tint:EvidenceItem ;
+    tint:evidenceType "traditional-use-placeholder" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000006 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000007 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000008 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000009 a tint:EvidenceItem ;
+    tint:evidenceType "traditional-use-placeholder" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000010 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000011 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000012 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000013 a tint:EvidenceItem ;
+    tint:evidenceType "traditional-use-placeholder" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000014 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000015 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000016 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000017 a tint:EvidenceItem ;
+    tint:evidenceType "traditional-use-placeholder" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000018 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000019 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000020 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000021 a tint:EvidenceItem ;
+    tint:evidenceType "traditional-use-placeholder" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000022 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000023 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000024 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000025 a tint:EvidenceItem ;
+    tint:evidenceType "traditional-use-placeholder" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000026 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000027 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000028 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000029 a tint:EvidenceItem ;
+    tint:evidenceType "traditional-use-placeholder" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000030 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000031 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000032 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000033 a tint:EvidenceItem ;
+    tint:evidenceType "traditional-use-placeholder" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000034 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000035 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000036 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000037 a tint:EvidenceItem ;
+    tint:evidenceType "traditional-use-placeholder" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000038 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000039 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:evidence-000040 a tint:EvidenceItem ;
+    tint:evidenceType "source-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:sourceCitation "PLACEHOLDER: authoritative source and exact passage must be supplied during validation." ;
+    tint:assessmentNote "Not assessed"@en .
+
+data:claim-000001-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "pregnancy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review."@en .
+
+data:claim-000001-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "medicine-interaction-review" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review."@en .
+
+data:claim-000002-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "pregnancy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review."@en .
+
+data:claim-000002-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "medicine-interaction-review" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review."@en .
+
+data:claim-000003-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "pregnancy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review."@en .
+
+data:claim-000003-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "medicine-interaction-review" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review."@en .
+
+data:claim-000004-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "allergy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review."@en .
+
+data:claim-000004-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "medicine-interaction-review" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review."@en .
+
+data:claim-000005-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "allergy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review."@en .
+
+data:claim-000005-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "medicine-interaction-review" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review."@en .
+
+data:claim-000006-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "pregnancy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review."@en .
+
+data:claim-000006-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "medicine-interaction-review" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review."@en .
+
+data:claim-000007-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "pregnancy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review."@en .
+
+data:claim-000007-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "medicine-interaction-review" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review."@en .
+
+data:claim-000008-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "pregnancy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review."@en .
+
+data:claim-000008-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "medicine-interaction-review" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review."@en .
+
+data:claim-000009-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "pregnancy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review."@en .
+
+data:claim-000009-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "dose-review-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: dose review required. Requires practitioner and safety review."@en .
+
+data:claim-000010-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "pregnancy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review."@en .
+
+data:claim-000010-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "dose-review-required" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: dose review required. Requires practitioner and safety review."@en .
+
+data:claim-000011-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "allergy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review."@en .
+
+data:claim-000012-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "allergy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review."@en .
+
+data:claim-000013-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "allergy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review."@en .
+
+data:claim-000014-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "allergy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review."@en .
+
+data:claim-000015-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "allergy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review."@en .
+
+data:claim-000016-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "reflux-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: reflux caution. Requires practitioner and safety review."@en .
+
+data:claim-000016-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "child-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: child caution. Requires practitioner and safety review."@en .
+
+data:claim-000017-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "reflux-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: reflux caution. Requires practitioner and safety review."@en .
+
+data:claim-000017-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "child-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: child caution. Requires practitioner and safety review."@en .
+
+data:claim-000018-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "external-use-only" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: external use only. Requires practitioner and safety review."@en .
+
+data:claim-000018-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "patch-test" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: patch test. Requires practitioner and safety review."@en .
+
+data:claim-000019-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "external-use-only" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: external use only. Requires practitioner and safety review."@en .
+
+data:claim-000019-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "patch-test" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: patch test. Requires practitioner and safety review."@en .
+
+data:claim-000020-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "external-use-only" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: external use only. Requires practitioner and safety review."@en .
+
+data:claim-000020-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "pregnancy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review."@en .
+
+data:claim-000020-safety-3 a tint:SafetyStatement ;
+    tint:safetyCode "child-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: child caution. Requires practitioner and safety review."@en .
+
+data:claim-000021-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "medicine-interaction-review" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review."@en .
+
+data:claim-000021-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "allergy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review."@en .
+
+data:claim-000022-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "medicine-interaction-review" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review."@en .
+
+data:claim-000022-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "allergy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review."@en .
+
+data:claim-000023-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "practitioner-supervision" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: practitioner supervision. Requires practitioner and safety review."@en .
+
+data:claim-000023-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "pregnancy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review."@en .
+
+data:claim-000023-safety-3 a tint:SafetyStatement ;
+    tint:safetyCode "medicine-interaction-review" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review."@en .
+
+data:claim-000024-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "practitioner-supervision" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: practitioner supervision. Requires practitioner and safety review."@en .
+
+data:claim-000024-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "pregnancy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review."@en .
+
+data:claim-000024-safety-3 a tint:SafetyStatement ;
+    tint:safetyCode "medicine-interaction-review" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review."@en .
+
+data:claim-000025-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "practitioner-supervision" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: practitioner supervision. Requires practitioner and safety review."@en .
+
+data:claim-000025-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "pregnancy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review."@en .
+
+data:claim-000025-safety-3 a tint:SafetyStatement ;
+    tint:safetyCode "thyroid-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: thyroid caution. Requires practitioner and safety review."@en .
+
+data:claim-000025-safety-4 a tint:SafetyStatement ;
+    tint:safetyCode "sedative-interaction" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: sedative interaction. Requires practitioner and safety review."@en .
+
+data:claim-000026-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "practitioner-supervision" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: practitioner supervision. Requires practitioner and safety review."@en .
+
+data:claim-000026-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "pregnancy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review."@en .
+
+data:claim-000026-safety-3 a tint:SafetyStatement ;
+    tint:safetyCode "thyroid-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: thyroid caution. Requires practitioner and safety review."@en .
+
+data:claim-000026-safety-4 a tint:SafetyStatement ;
+    tint:safetyCode "sedative-interaction" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: sedative interaction. Requires practitioner and safety review."@en .
+
+data:claim-000027-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "hypertension-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: hypertension caution. Requires practitioner and safety review."@en .
+
+data:claim-000027-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "pregnancy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review."@en .
+
+data:claim-000027-safety-3 a tint:SafetyStatement ;
+    tint:safetyCode "medicine-interaction-review" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review."@en .
+
+data:claim-000028-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "hypertension-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: hypertension caution. Requires practitioner and safety review."@en .
+
+data:claim-000028-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "pregnancy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review."@en .
+
+data:claim-000028-safety-3 a tint:SafetyStatement ;
+    tint:safetyCode "medicine-interaction-review" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review."@en .
+
+data:claim-000029-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "medicine-interaction-review" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review."@en .
+
+data:claim-000029-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "liver-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: liver caution. Requires practitioner and safety review."@en .
+
+data:claim-000030-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "oral-burn-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: oral burn caution. Requires practitioner and safety review."@en .
+
+data:claim-000030-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "medicine-interaction-review" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review."@en .
+
+data:claim-000030-safety-3 a tint:SafetyStatement ;
+    tint:safetyCode "child-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: child caution. Requires practitioner and safety review."@en .
+
+data:claim-000031-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "allergy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review."@en .
+
+data:claim-000032-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "pregnancy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: pregnancy caution. Requires practitioner and safety review."@en .
+
+data:claim-000032-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "medicine-interaction-review" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review."@en .
+
+data:claim-000032-safety-3 a tint:SafetyStatement ;
+    tint:safetyCode "allergy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review."@en .
+
+data:claim-000033-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "bleeding-risk" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: bleeding risk. Requires practitioner and safety review."@en .
+
+data:claim-000033-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "surgery-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: surgery caution. Requires practitioner and safety review."@en .
+
+data:claim-000033-safety-3 a tint:SafetyStatement ;
+    tint:safetyCode "medicine-interaction-review" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: medicine interaction review. Requires practitioner and safety review."@en .
+
+data:claim-000034-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "infant-contraindication" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: infant contraindication. Requires practitioner and safety review."@en .
+
+data:claim-000034-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "diabetes-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: diabetes caution. Requires practitioner and safety review."@en .
+
+data:claim-000034-safety-3 a tint:SafetyStatement ;
+    tint:safetyCode "allergy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review."@en .
+
+data:claim-000035-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "infant-contraindication" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: infant contraindication. Requires practitioner and safety review."@en .
+
+data:claim-000035-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "diabetes-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: diabetes caution. Requires practitioner and safety review."@en .
+
+data:claim-000035-safety-3 a tint:SafetyStatement ;
+    tint:safetyCode "allergy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review."@en .
+
+data:claim-000036-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "dental-erosion-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: dental erosion caution. Requires practitioner and safety review."@en .
+
+data:claim-000036-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "reflux-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: reflux caution. Requires practitioner and safety review."@en .
+
+data:claim-000037-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "dental-erosion-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: dental erosion caution. Requires practitioner and safety review."@en .
+
+data:claim-000037-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "reflux-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: reflux caution. Requires practitioner and safety review."@en .
+
+data:claim-000038-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "do-not-swallow" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: do not swallow. Requires practitioner and safety review."@en .
+
+data:claim-000038-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "child-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: child caution. Requires practitioner and safety review."@en .
+
+data:claim-000038-safety-3 a tint:SafetyStatement ;
+    tint:safetyCode "sodium-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: sodium caution. Requires practitioner and safety review."@en .
+
+data:claim-000039-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "patch-test" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: patch test. Requires practitioner and safety review."@en .
+
+data:claim-000039-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "slip-hazard" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: slip hazard. Requires practitioner and safety review."@en .
+
+data:claim-000040-safety-1 a tint:SafetyStatement ;
+    tint:safetyCode "allergy-caution" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: allergy caution. Requires practitioner and safety review."@en .
+
+data:claim-000040-safety-2 a tint:SafetyStatement ;
+    tint:safetyCode "patch-test" ;
+    tint:validationStatus "unvalidated" ;
+    tint:assessmentNote "PLACEHOLDER SAFETY FLAG: patch test. Requires practitioner and safety review."@en .
+
+data:contribution-000001 a tint:Contribution ;
+    tint:proposes data:claim-000001 ;
+    prov:wasAssociatedWith data:pilot-practitioner-01 ;
+    prov:endedAtTime "2026-08-01T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000002 a tint:Contribution ;
+    tint:proposes data:claim-000002 ;
+    prov:wasAssociatedWith data:pilot-practitioner-02 ;
+    prov:endedAtTime "2026-08-02T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000003 a tint:Contribution ;
+    tint:proposes data:claim-000003 ;
+    prov:wasAssociatedWith data:pilot-practitioner-03 ;
+    prov:endedAtTime "2026-08-03T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000004 a tint:Contribution ;
+    tint:proposes data:claim-000004 ;
+    prov:wasAssociatedWith data:pilot-practitioner-01 ;
+    prov:endedAtTime "2026-08-04T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000005 a tint:Contribution ;
+    tint:proposes data:claim-000005 ;
+    prov:wasAssociatedWith data:pilot-practitioner-02 ;
+    prov:endedAtTime "2026-08-05T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000006 a tint:Contribution ;
+    tint:proposes data:claim-000006 ;
+    prov:wasAssociatedWith data:pilot-practitioner-03 ;
+    prov:endedAtTime "2026-08-06T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000007 a tint:Contribution ;
+    tint:proposes data:claim-000007 ;
+    prov:wasAssociatedWith data:pilot-practitioner-01 ;
+    prov:endedAtTime "2026-08-07T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000008 a tint:Contribution ;
+    tint:proposes data:claim-000008 ;
+    prov:wasAssociatedWith data:pilot-practitioner-02 ;
+    prov:endedAtTime "2026-08-08T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000009 a tint:Contribution ;
+    tint:proposes data:claim-000009 ;
+    prov:wasAssociatedWith data:pilot-practitioner-03 ;
+    prov:endedAtTime "2026-08-09T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000010 a tint:Contribution ;
+    tint:proposes data:claim-000010 ;
+    prov:wasAssociatedWith data:pilot-practitioner-01 ;
+    prov:endedAtTime "2026-08-10T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000011 a tint:Contribution ;
+    tint:proposes data:claim-000011 ;
+    prov:wasAssociatedWith data:pilot-practitioner-02 ;
+    prov:endedAtTime "2026-08-11T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000012 a tint:Contribution ;
+    tint:proposes data:claim-000012 ;
+    prov:wasAssociatedWith data:pilot-practitioner-03 ;
+    prov:endedAtTime "2026-08-12T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000013 a tint:Contribution ;
+    tint:proposes data:claim-000013 ;
+    prov:wasAssociatedWith data:pilot-practitioner-01 ;
+    prov:endedAtTime "2026-08-13T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000014 a tint:Contribution ;
+    tint:proposes data:claim-000014 ;
+    prov:wasAssociatedWith data:pilot-practitioner-02 ;
+    prov:endedAtTime "2026-08-14T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000015 a tint:Contribution ;
+    tint:proposes data:claim-000015 ;
+    prov:wasAssociatedWith data:pilot-practitioner-03 ;
+    prov:endedAtTime "2026-08-15T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000016 a tint:Contribution ;
+    tint:proposes data:claim-000016 ;
+    prov:wasAssociatedWith data:pilot-practitioner-01 ;
+    prov:endedAtTime "2026-08-16T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000017 a tint:Contribution ;
+    tint:proposes data:claim-000017 ;
+    prov:wasAssociatedWith data:pilot-practitioner-02 ;
+    prov:endedAtTime "2026-08-17T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000018 a tint:Contribution ;
+    tint:proposes data:claim-000018 ;
+    prov:wasAssociatedWith data:pilot-practitioner-03 ;
+    prov:endedAtTime "2026-08-18T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000019 a tint:Contribution ;
+    tint:proposes data:claim-000019 ;
+    prov:wasAssociatedWith data:pilot-practitioner-01 ;
+    prov:endedAtTime "2026-08-19T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000020 a tint:Contribution ;
+    tint:proposes data:claim-000020 ;
+    prov:wasAssociatedWith data:pilot-practitioner-02 ;
+    prov:endedAtTime "2026-08-20T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000021 a tint:Contribution ;
+    tint:proposes data:claim-000021 ;
+    prov:wasAssociatedWith data:pilot-practitioner-03 ;
+    prov:endedAtTime "2026-08-01T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000022 a tint:Contribution ;
+    tint:proposes data:claim-000022 ;
+    prov:wasAssociatedWith data:pilot-practitioner-01 ;
+    prov:endedAtTime "2026-08-02T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000023 a tint:Contribution ;
+    tint:proposes data:claim-000023 ;
+    prov:wasAssociatedWith data:pilot-practitioner-02 ;
+    prov:endedAtTime "2026-08-03T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000024 a tint:Contribution ;
+    tint:proposes data:claim-000024 ;
+    prov:wasAssociatedWith data:pilot-practitioner-03 ;
+    prov:endedAtTime "2026-08-04T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000025 a tint:Contribution ;
+    tint:proposes data:claim-000025 ;
+    prov:wasAssociatedWith data:pilot-practitioner-01 ;
+    prov:endedAtTime "2026-08-05T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000026 a tint:Contribution ;
+    tint:proposes data:claim-000026 ;
+    prov:wasAssociatedWith data:pilot-practitioner-02 ;
+    prov:endedAtTime "2026-08-06T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000027 a tint:Contribution ;
+    tint:proposes data:claim-000027 ;
+    prov:wasAssociatedWith data:pilot-practitioner-03 ;
+    prov:endedAtTime "2026-08-07T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000028 a tint:Contribution ;
+    tint:proposes data:claim-000028 ;
+    prov:wasAssociatedWith data:pilot-practitioner-01 ;
+    prov:endedAtTime "2026-08-08T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000029 a tint:Contribution ;
+    tint:proposes data:claim-000029 ;
+    prov:wasAssociatedWith data:pilot-practitioner-02 ;
+    prov:endedAtTime "2026-08-09T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000030 a tint:Contribution ;
+    tint:proposes data:claim-000030 ;
+    prov:wasAssociatedWith data:pilot-practitioner-03 ;
+    prov:endedAtTime "2026-08-10T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000031 a tint:Contribution ;
+    tint:proposes data:claim-000031 ;
+    prov:wasAssociatedWith data:pilot-practitioner-01 ;
+    prov:endedAtTime "2026-08-11T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000032 a tint:Contribution ;
+    tint:proposes data:claim-000032 ;
+    prov:wasAssociatedWith data:pilot-practitioner-02 ;
+    prov:endedAtTime "2026-08-12T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000033 a tint:Contribution ;
+    tint:proposes data:claim-000033 ;
+    prov:wasAssociatedWith data:pilot-practitioner-03 ;
+    prov:endedAtTime "2026-08-13T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000034 a tint:Contribution ;
+    tint:proposes data:claim-000034 ;
+    prov:wasAssociatedWith data:pilot-practitioner-01 ;
+    prov:endedAtTime "2026-08-14T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000035 a tint:Contribution ;
+    tint:proposes data:claim-000035 ;
+    prov:wasAssociatedWith data:pilot-practitioner-02 ;
+    prov:endedAtTime "2026-08-15T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000036 a tint:Contribution ;
+    tint:proposes data:claim-000036 ;
+    prov:wasAssociatedWith data:pilot-practitioner-03 ;
+    prov:endedAtTime "2026-08-16T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000037 a tint:Contribution ;
+    tint:proposes data:claim-000037 ;
+    prov:wasAssociatedWith data:pilot-practitioner-01 ;
+    prov:endedAtTime "2026-08-17T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000038 a tint:Contribution ;
+    tint:proposes data:claim-000038 ;
+    prov:wasAssociatedWith data:pilot-practitioner-02 ;
+    prov:endedAtTime "2026-08-18T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000039 a tint:Contribution ;
+    tint:proposes data:claim-000039 ;
+    prov:wasAssociatedWith data:pilot-practitioner-03 ;
+    prov:endedAtTime "2026-08-19T09:00:00Z"^^xsd:dateTime .
+
+data:contribution-000040 a tint:Contribution ;
+    tint:proposes data:claim-000040 ;
+    prov:wasAssociatedWith data:pilot-practitioner-01 ;
+    prov:endedAtTime "2026-08-20T09:00:00Z"^^xsd:dateTime .
+

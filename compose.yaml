@@ -1,0 +1,26 @@
+services:
+  fuseki:
+    build:
+      context: ./infra/fuseki
+      args:
+        JENA_VERSION: "6.2.0"
+    command:
+      - --tdb2
+      - --loc=/fuseki/databases/tint
+      - --update
+      - --ping
+      - /tint
+    ports:
+      - "127.0.0.1:3030:3030"
+    volumes:
+      - tint-fuseki-data:/fuseki/databases
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "--silent", "http://localhost:3030/$/ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+      start_period: 15s
+    restart: unless-stopped
+
+volumes:
+  tint-fuseki-data:

@@ -1,0 +1,40 @@
+@prefix tint: <https://w3id.org/tint/ontology/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+tint:HealthUseClaimShape a sh:NodeShape ;
+    sh:targetClass tint:HealthUseClaim ;
+    sh:property [
+        sh:path tint:claimsUseOf ;
+        sh:class tint:Remedy ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:message "A health-use claim must identify exactly one remedy."@en
+    ] ;
+    sh:property [
+        sh:path tint:hasTarget ;
+        sh:minCount 1 ;
+        sh:or ( [ sh:class tint:HealthCondition ] [ sh:class tint:Symptom ] ) ;
+        sh:message "A health-use claim must identify a symptom or health condition."@en
+    ] ;
+    sh:property [ sh:path tint:belongsToSystem ; sh:class tint:MedicalSystem ; sh:minCount 1 ] ;
+    sh:property [ sh:path tint:hasOutcome ; sh:class tint:IntendedOutcome ; sh:minCount 1 ] ;
+    sh:property [ sh:path tint:appliesToPopulation ; sh:class tint:PopulationGroup ; sh:minCount 1 ] ;
+    sh:property [ sh:path tint:supportedBy ; sh:class tint:EvidenceItem ; sh:minCount 1 ] ;
+    sh:property [ sh:path tint:hasSafetyStatement ; sh:class tint:SafetyStatement ; sh:minCount 1 ] ;
+    sh:property [ sh:path tint:publicationStatus ; sh:class tint:PublicationStatus ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path skos:prefLabel ; sh:languageIn ( "en" "hi" ) ; sh:uniqueLang true ; sh:minCount 2 ] .
+
+tint:EvidenceItemShape a sh:NodeShape ;
+    sh:targetClass tint:EvidenceItem ;
+    sh:or (
+        [ sh:property [ sh:path tint:sourceCitation ; sh:minCount 1 ] ]
+        [ sh:property [ sh:path tint:sourceIdentifier ; sh:minCount 1 ] ]
+    ) .
+
+tint:ReviewDecisionShape a sh:NodeShape ;
+    sh:targetClass tint:ReviewDecision ;
+    sh:property [ sh:path tint:reviews ; sh:class tint:Contribution ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path tint:decidedBy ; sh:class tint:Reviewer ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path tint:reviewedAt ; sh:datatype xsd:dateTime ; sh:minCount 1 ; sh:maxCount 1 ] .
+
